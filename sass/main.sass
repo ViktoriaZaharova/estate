@@ -1,0 +1,128 @@
+@import 'vars'
+
+// home
+.home
+	padding: 335px 0 70px
+	position: relative
+	z-index: 1
+	color: #fff
+	overflow: hidden
+	background: #000
+	&::before
+		content: ''
+		position: absolute
+		background: url('../img/home-bg1.png') no-repeat center
+		background-size: cover
+		width: 1900px
+		height: 100%
+		bottom: 0
+		left: -610px
+		z-index: -1
+		opacity: 0.8
+	.list-messangers
+		margin: 0 80px 0 70px	
+	h1
+		margin: 0 0 228px
+		max-width: 1018px	
+	.phone
+		margin-right: auto	
+
+.home-image
+	position: absolute
+	right: -517px
+	top: 0
+	max-width: 1286px
+	width: 100%
+	height: 100%
+	z-index: -1
+	@include d-flex
+	&::before
+		content: ''
+		position: absolute
+		z-index: 1
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%)
+		left: 0
+		top: 0
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transform: scale(-1,1)
+
+.schedule-box
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	&-it
+		border-right: 1px solid #fff
+		padding: 0 25px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+			border: none			
+
+.list-messangers
+	display: flex
+	align-items: center
+	li
+		margin: 0 30px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 44px
+			height: 27px
+			fill: #B6AC97
+			@include d-flex
+
+			&:hover
+				fill: $accent
+
+.phone
+	color: #fff
+	font-size: 32px
+	&:hover
+		color: $accent	
+
+// about
+.about
+	padding: 100px 0
+	z-index: 1
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		width: calc(100% - 557px)
+		height: 785px
+		background: #96B5B3
+	.box-text
+		max-width: 590px	
+
+.about-image
+	margin: 100px 0 0
+	position: relative
+	width: 100%
+	padding-bottom: 59.3%
+	overflow: hidden
+	img
+		position: absolute
+		bottom: 0
+		left: 0
+		transform: translate(-100%, 100%)
+
+// kitchen
+.kitchen
+	padding: 0 0 92px
+	h2
+		margin: 0 0 32px	
+	.box-text
+		left: -100%		
+	
+
+.kitchen-title-text
+	right: auto
+	left: 28px	
