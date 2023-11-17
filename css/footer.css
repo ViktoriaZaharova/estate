@@ -1,1 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+footer {
+  background: #97B6B4;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 84px 0;
+  font-size: 16px;
+}
+
+.logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 97px;
+  width: 100%;
+  margin: 0 68px 0 0;
+}
+
+.schedule p {
+  margin: 0 0 10px;
+}
+.schedule p:last-child {
+  margin: 0;
+}
+
+.footer-phone {
+  color: #fff;
+  font-size: 24px;
+  margin: 27px 0 10px;
+}
+.footer-phone:hover {
+  color: #000;
+}
+
+.footer-menu {
+  margin: 0 80px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+.footer-menu li {
+  margin: 0 19px 19px 0;
+}
+.footer-menu li a {
+  color: #fff;
+}
+.footer-menu li a:hover {
+  color: #ccc;
+}
+
+.list-social-footer {
+  max-width: 106px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.list-social-footer li {
+  margin: 0 0 32px 0;
+}
+.list-social-footer li a {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+}
+.list-social-footer li a:hover {
+  fill: #000;
+}
+
+.map-location {
+  height: 326px;
+  width: 697px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.map-location iframe {
+  width: 100%;
+  height: 100%;
+}

@@ -1,3 +1,65 @@
-@import "fonts"
 @import "vars"
 
+footer
+	background: #97B6B4
+	color: #fff
+	position: relative
+	z-index: 1
+	overflow: hidden
+	padding: 84px 0
+	font-size: 16px
+
+.logo-footer
+	@include d-flex
+	max-width: 97px
+	width: 100%
+	margin: 0 68px 0 0
+
+.schedule
+	p
+		margin: 0 0 10px
+		&:last-child
+			margin: 0
+
+.footer-phone
+	color: #fff
+	font-size: 24px
+	margin: 27px 0 10px
+	&:hover
+		color: #000				
+
+.footer-menu
+	margin: 0 80px
+	column-count: 2
+	li
+		margin: 0 19px 19px 0
+		a
+			color: #fff
+			&:hover
+				color: #ccc 	
+
+.list-social-footer
+	max-width: 106px
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	justify-content: space-between
+	li
+		margin: 0 0 32px	0
+		a
+			fill: #fff
+			width: 40px
+			height: 40px
+			&:hover
+				fill: #000
+			
+.map-location	
+	height: 326px
+	width: 697px
+	position: absolute
+	right: 0
+	top: 0
+	iframe
+		width: 100%
+		height: 100%

@@ -20,12 +20,12 @@
 		z-index: -1
 		opacity: 0.8
 	.list-messangers
-		margin: 0 80px 0 70px	
+		margin: 0 80px 0 70px
 	h1
 		margin: 0 0 228px
-		max-width: 1018px	
+		max-width: 1018px
 	.phone
-		margin-right: auto	
+		margin-right: auto
 
 .home-image
 	position: absolute
@@ -62,7 +62,7 @@
 			padding-left: 0
 		&:last-child
 			padding-right: 0
-			border: none			
+			border: none
 
 .list-messangers
 	display: flex
@@ -84,11 +84,11 @@
 	color: #fff
 	font-size: 32px
 	&:hover
-		color: $accent	
+		color: $accent
 
 // about
 .about
-	padding: 100px 0
+	padding: 100px 0 190px
 	z-index: 1
 	&::before
 		content: ''
@@ -100,7 +100,7 @@
 		height: 785px
 		background: #96B5B3
 	.box-text
-		max-width: 590px	
+		max-width: 590px
 
 .about-image
 	margin: 100px 0 0
@@ -112,17 +112,460 @@
 		position: absolute
 		bottom: 0
 		left: 0
-		transform: translate(-100%, 100%)
+		width: 100%
+		height: 100%
+		object-fit: cover
+		// transform: translate(-100%, 100%)
+
+.about-title-text
+	bottom: 213px		
 
 // kitchen
 .kitchen
 	padding: 0 0 92px
+	position: relative
 	h2
-		margin: 0 0 32px	
-	.box-text
-		left: -100%		
+		margin: 0 0 32px
+		
 	
+.kitchen-content
+	position: relative
+	z-index: 1	
 
 .kitchen-title-text
 	right: auto
-	left: 28px	
+	left: 28px
+	bottom: 153px
+
+.kitchen-image
+	max-width: 1326px
+	height: 723px
+	width: 100%
+	float: left
+	padding: 0 0 0 50px
+	position: absolute
+	right: 0
+	top: 18px
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+// atmosphere
+.atmosphere
+	position: relative
+	padding: 187px 0 357px
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #D6ADA0
+	h2
+		margin: 0 0 38px
+
+.atmosphere-about
+	max-width: 545px
+	margin: 213px auto 0
+
+.atmosphere-title-text
+	color: #fff
+	bottom: 117px
+
+.callback-box
+	border-radius: 5px
+	background: #7BA09A
+	padding: 47px 39px 66px 46px
+	color: #fff
+	.h2
+		max-width: 427px
+		margin: 0 0 21px
+	.box-text
+		color: #DCDCDC
+	.form-callback
+		margin: 63px 0 0
+		input
+			color: #fff
+			&::placeholder
+				color: #fff
+		label
+			margin: 0 0 29px
+			&:first-child
+				max-width: 182px
+			&:nth-child(2)
+				max-width: 231px
+			&:last-child
+				max-width: 187px
+		.form-group
+			width: 100%
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			justify-content: space-between
+		input
+
+	.form-text
+		margin: 0 0 30px
+		font-weight: 300
+		color: #fff
+
+.form-footer
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.consent
+	color: #B9D1D0
+	font-size: 12px
+	max-width: 188px
+	margin: 0 0 0 10px
+
+// sales section
+.sales-wrapper
+	color: #fff
+	width: 100%
+	padding: 35px 74px 55px
+	border-radius: 5px
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../img/sale-bg.jpeg'), lightgray 50% no-repeat
+	background-position: center
+	background-size: cover
+
+.sales-text
+	font-weight: bold
+	font-size: 24px
+	margin: 37px 0
+
+// news menu
+.menu-card
+	width: 100%
+	height: 100%
+	&__photo
+		width: 100%
+		height: 346px
+		@include d-flex
+		border-radius: 5px
+		img
+			border-radius: 5px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		padding: 32px 0 0
+		width: 100%
+		height: calc(100% - 346px)
+		display: flex
+		flex-direction: column
+	&__title
+		font-size: 24px
+		font-weight: bold
+		color: #000
+		margin: 0 0 15px
+		max-width: 287px
+		&:hover
+			color: $accent
+	&__description
+		font-size: 16px
+		font-weight: 300
+		margin: 0 0 32px
+	&__price
+		margin: auto 0 0
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		font-size: 24px
+		font-weight: bold
+
+// programm
+.programm
+	padding: 430px 0 83px
+	position: relative
+	overflow: hidden
+
+.programm-title-text
+	font-size: 186px
+	font-weight: bold
+	color: #fff
+	-webkit-text-stroke: 2px #CDCDCD
+	transform: none
+	writing-mode: horizontal-tb
+	white-space: nowrap
+	bottom: auto
+	right: auto
+	left: 58px
+	top: 84px
+
+.programm-card
+	width: 100%
+	height: 100%
+	font-size: 20px
+	&__photo
+		width: 100%
+		height: 640px
+		border-radius: 5px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			border-radius: 5px
+			object-fit: cover
+	&__body
+		padding: 25px 0 0
+		width: 100%
+	.date-text
+		margin: 0 0 23px
+	&__name
+		font-weight: bold
+		font-size: 24px
+		margin: 0 0 23px
+		color: #000
+		&:hover
+			color: $accent
+	.box-text
+		max-width: 413px
+
+.date-text
+	font-size: 20px
+	font-weight: 300
+	color: #97B6B4
+
+// events section
+.events-section
+	padding: 58px 0 52px
+	background: #FFF1EC
+
+.events-card
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	&__photo
+		width: 100%
+		height: 323px
+		border-radius: 5px
+		@include d-flex
+		img
+			border-radius: 5px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		height: calc(100% - 323px)
+		padding: 30px 0 0
+		display: flex
+		flex-direction: column
+	.btn
+		margin: auto 0 0
+	.date-text
+		margin: 0 0 30px
+	.box-text
+		margin: 0 0 23px
+		max-width: 320px
+
+// category section
+.category-section
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
+.category-box
+	height: 613px
+	width: 50%
+	position: relative
+	z-index: 1
+	transition: all ease-in-out .2s
+	overflow: hidden
+	@include d-flex
+	color: #fff
+	&::before
+		content: ''
+		position: absolute
+		transition: all ease-in-out .25s
+		background: rgba(0, 0, 0, 0.40)
+		opacity: 0
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+	&:hover
+		&::before
+			opacity: 1
+		.category-box__hidden
+			opacity: 1
+			transform: translateY(0)
+	&__bg
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transition: .3s
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+	&__hidden
+		width: 100%
+		height: 100%
+		padding: 20px 40px
+		position: relative
+		z-index: 1
+		left: 0
+		top: 0
+		transform: translateY(20%)
+		opacity: 0
+		transition: all ease-in-out .2s
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+	&.w100
+		width: 100%
+		height: 404px
+		.box-text
+			max-width: 597px
+	.box-text
+		margin: 45px auto
+		max-width: 413px
+	&__title
+		font-size: 48px
+		font-weight: bold
+		text-transform: uppercase
+		color: #fff
+		&:hover
+			color: $accent
+
+// our-halls
+.our-halls
+	position: relative
+	z-index: 1
+	padding: 137px 0 166px
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+		width: 100%
+		height: calc(100% - 318px)
+		background: #96B5B3
+	&__image
+		max-width: 965px
+		height: 713px
+		width: 100%
+		bottom: 0
+		left: 0
+		position: absolute
+		z-index: -1
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__content
+		margin: 0 auto 0 96px
+		max-width: 545px
+	.box-text
+		margin: 38px 0 127px
+	.btn-reservation
+		border-radius: 0
+		min-width: 839px
+		width: 100%
+		padding: 61px 63px
+		height: auto
+		text-align: left
+		justify-content: flex-start
+
+.halls-card
+	width: 100%
+	height: 543px
+	overflow: hidden
+	position: relative
+	z-index: 1
+	@include d-flex
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%)
+		transition: all ease-in-out .45s
+	&:hover
+		.halls-card__bg
+			transform: scale(1.04)
+		.halls-card__body
+			padding-bottom: 99px
+			.btn
+				opacity: 1
+	&__bg
+		position: absolute
+		top: 0
+		left: 0
+		transition: all ease-in-out .45s
+		z-index: -1
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__body
+		position: relative
+		padding: 30px 40px
+		text-align: center
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		transition: all ease-in-out .45s
+		.btn
+			margin: 0 auto 0
+			position: absolute
+			right: 0
+			bottom: 0
+			left: 0
+			opacity: 0
+			transition: all ease-in-out .2s
+	&__title
+		color: #fff
+		margin: 50px auto
+		font-size: 48px
+		transition: all ease-in-out .2s
+		&:hover
+			color: $accent
+
+// reviews
+.reviews-section
+	background: #FFF1EC
+	padding: 85px 0 117px
+	overflow: hidden
+
+.reviews-slider
+	width: calc(100% + 230px)
+	.slide
+		margin: 0 75px 0 0
+		height: auto
+		max-width: 665px
+		width: 100%
+	.slick-track
+		display: flex
+		align-items: stretch	
+
+.reviews-card
+	border-radius: 5px
+	background: #FFF
+	padding: 60px
+	width: 100%
+	height: 100%
+	&__name
+		font-size: 24px
+		font-weight: bold
+		margin: 0 0 25px
+	.list-rating
+		margin: 25px 0 0	
