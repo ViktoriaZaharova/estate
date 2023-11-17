@@ -6,6 +6,29 @@ $('.reviews-slider').slick({
 	arrows: false,
 	autoplay: true,
 	autoplaySpeed: 2000,
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: false,
+			}
+		}
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	]
+});
+
+$('.btn-burger').on('click', function (e) {
+	e.preventDefault();
+	$('.mobile-menu').fadeToggle();
+});
+
+$('.mobile-menu__close').on('click', function (e) {
+	e.preventDefault();
+	$('.mobile-menu').fadeOut();
 });
 
 

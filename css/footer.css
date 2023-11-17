@@ -88,6 +88,7 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: -1;
 }
 .map-location iframe {
   width: 100%;

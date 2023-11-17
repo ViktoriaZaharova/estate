@@ -49,6 +49,10 @@ body {
   color: #000;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -225,7 +229,14 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   font-size: 20px;
 }
 
+.btn-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .btn-group .btn {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   margin: 0 30px 0 0;
   border-radius: 5px;
 }

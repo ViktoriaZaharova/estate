@@ -26,3 +26,77 @@ header
 	margin: 0 0 0 auto
 	&:hover
 		fill: $accent	
+
+// mobile menu
+.mobile-menu
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	max-width: 442px	
+	height: 100%
+	overflow-y: auto
+	z-index: 10
+	background: #fff
+	padding: 70px 83px 95px 78px
+	font-size: 24px
+	display: none
+	&__close
+		width: 27px
+		height: 27px
+		min-width: 27px
+		@include d-flex
+		margin: 0 0 0 auto
+		fill: #D6AE9F
+	&__head
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		padding: 0 0 60px
+		width: 100%
+	&__body
+		width: 100%
+		padding: 60px 0	
+		border-top: 1px solid #97B6B4
+		border-bottom: 1px solid #97B6B4
+	&__footer
+		padding: 60px 0 0	
+	.phone
+		color: #000
+		font-size: 24px
+	.schedule
+		font-size: 20px
+		color: #97B6B4
+		margin: 0 0 27px
+	.address-box
+		margin: 10px 0 0
+	.list-messangers
+		margin: 60px 0 0
+		li
+			margin: 0 36px 0 0
+			&:last-child
+				margin: 0
+			a
+				width: 40px
+				height: 34px
+				min-width: 40px
+				@include d-flex
+				fill: $blue
+				&:hover
+					fill: $accent	
+
+.logo-menu
+	max-width: 137px
+	width: 100%
+	@include d-flex		
+
+.menu
+	li	
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
+		a
+			color: #000
+			&:hover
+				color: $accent

@@ -43,3 +43,122 @@ header .container {
 .btn-burger:hover {
   fill: #D6AE9F;
 }
+
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 442px;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 10;
+  background: #fff;
+  padding: 70px 83px 95px 78px;
+  font-size: 24px;
+  display: none;
+}
+.mobile-menu__close {
+  width: 27px;
+  height: 27px;
+  min-width: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 auto;
+  fill: #D6AE9F;
+}
+.mobile-menu__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0 60px;
+  width: 100%;
+}
+.mobile-menu__body {
+  width: 100%;
+  padding: 60px 0;
+  border-top: 1px solid #97B6B4;
+  border-bottom: 1px solid #97B6B4;
+}
+.mobile-menu__footer {
+  padding: 60px 0 0;
+}
+.mobile-menu .phone {
+  color: #000;
+  font-size: 24px;
+}
+.mobile-menu .schedule {
+  font-size: 20px;
+  color: #97B6B4;
+  margin: 0 0 27px;
+}
+.mobile-menu .address-box {
+  margin: 10px 0 0;
+}
+.mobile-menu .list-messangers {
+  margin: 60px 0 0;
+}
+.mobile-menu .list-messangers li {
+  margin: 0 36px 0 0;
+}
+.mobile-menu .list-messangers li:last-child {
+  margin: 0;
+}
+.mobile-menu .list-messangers li a {
+  width: 40px;
+  height: 34px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #97B6B4;
+}
+.mobile-menu .list-messangers li a:hover {
+  fill: #D6AE9F;
+}
+
+.logo-menu {
+  max-width: 137px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu li {
+  margin: 0 0 30px;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #000;
+}
+.menu li a:hover {
+  color: #D6AE9F;
+}
