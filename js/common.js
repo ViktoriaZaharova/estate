@@ -32,7 +32,7 @@ $('.mobile-menu__close').on('click', function (e) {
 // gsap.registerPlugin(ScrollTrigger) 
 let mm = gsap.matchMedia();
 
-mm.add("(min-width: 1200px)", () => {
+mm.add("(min-width: 992px)", () => {
 	gsap
 		.timeline({
 			scrollTrigger: {

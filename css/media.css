@@ -214,12 +214,6 @@
   .container {
     max-width: 950px;
   }
-  .kitchen-image {
-    right: 0;
-    min-width: auto;
-    position: relative;
-    padding: 0;
-  }
   .kitchen h2 {
     margin: 0 0 30px;
   }
@@ -355,6 +349,15 @@
   .kitchen-image, .about-image {
     margin: 20px 0 0;
   }
+  .kitchen-image {
+    right: 0;
+    min-width: auto;
+    position: relative;
+    padding: 0;
+    -webkit-transform: none;
+            transform: none;
+    max-width: none;
+  }
   .about {
     background: #96B5B3;
     padding: 60px 0;
@@ -394,6 +397,7 @@
     position: relative;
     height: auto;
     margin: 20px 0 0;
+    left: auto;
   }
   .our-halls .btn-reservation {
     min-width: auto;
