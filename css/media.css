@@ -57,7 +57,6 @@
   }
   .about-image {
     margin: 80px 0 0;
-    padding-bottom: 56.65%;
   }
   .programm {
     padding: 330px 0 83px;
@@ -68,14 +67,19 @@
   .title-text {
     font-size: 70px;
   }
-  .kitchen-title-text {
-    bottom: 80%;
-  }
   .programm-title-text {
     font-size: 100px;
   }
   .map-location {
     width: 400px;
+  }
+}
+@media only screen and (max-width: 1460px) {
+  .logo {
+    max-width: 120px;
+  }
+  header {
+    padding: 30px 0;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -313,6 +317,14 @@
   }
   .halls-card__title {
     font-size: 34px;
+  }
+  .about-image {
+    height: auto;
+  }
+  .about-image img {
+    left: 0;
+    bottom: 0;
+    position: relative;
   }
 }
 @media only screen and (max-width: 992px) {

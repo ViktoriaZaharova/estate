@@ -15,9 +15,6 @@ $('.reviews-slider').slick({
 				variableWidth: false,
 			}
 		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 	]
 });
 
@@ -31,224 +28,109 @@ $('.mobile-menu__close').on('click', function (e) {
 	$('.mobile-menu').fadeOut();
 });
 
+// animation
+// gsap.registerPlugin(ScrollTrigger) 
+let mm = gsap.matchMedia();
 
-// window.onload = function () {
-// 	let tl1 = new TimelineMax({ onUpdate: updatePercentage });
-// 	let tl2 = new TimelineMax();
-// 	const controller = new ScrollMagic.Controller();
+mm.add("(min-width: 1200px)", () => {
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".home",
+				start: "top",
+				end: "bottom",
+				scrub: 1
+			}
+		})
+		.fromTo(".logo-animation img", { y: 0 }, { y: -200 }, 0)
+		.to(".home-image", { scale: 1.5, right: 0, }, 0)
+		.fromTo(".home-footer", { y: 0, opacity: 1 }, { y: 150, opacity: 0 }, 0);
+		
+	
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".home-footer",
+				scrub: 1
+			}
+		})
+		.fromTo(".about-title-text", { y: 200 }, { y: -500 }, 0);
+		
+	
+	gsap
+		.timeline({
+			duration: 1,
+			scrollTrigger: {
+				trigger: ".about-image",
+				// start: "top",
+				// end: () => '+=${document.querySelector(".about-image").offsetHeight}',
+				scrub: true
+			}
+		})
+		.to(".about-image img", { bottom: 0, left: 0, scale: 1.25 }, 0);
+	
+	gsap
+		.timeline({
+			duration: 1,
+			scrollTrigger: {
+				trigger: ".kitchen",
+				scrub: 1
+			}
+		})
+		.to(".kitchen-title-text", { y: '-100%' }, 0)
+		// .to(".kitchen-content .box-text", { x: 0, opacity: 1 }, 0)
+		.to(".kitchen-image", { x: 0 }, 0);
+	
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".atmosphere",
+				scrub: 1
+			}
+		})
+		.to(".atmosphere-title-text", { y: -500 }, 0);
+	
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".programm",
+				scrub: 1
+			}
+		})
+		.to(".programm-col1 .programm-card__photo", { y: -50, zoom: 1 }, 0);
 
 	
-// 	tl1.to(".logo-animation", 2, {
-// 		y: -200,
-// 		ease: "power1.inOut",
-// 	});
-// 	tl1.to(".home-image", 2, {
-// 		right: 0,
-// 		scale: 2,
-// 		ease: "power1.inOut",
-// 	});
-// 	tl1.to(".home-footer", 2, {
-// 		y: 100,
-// 		opacity: 0,
-// 		ease: "power1.inOut",
-// 	});
-// 	tl1.to(".title-text", 5.0, {
-// 		y: -1,
-// 		ease: "power1.inOut",
-// 	});
-// 	tl1.to(".about-image img", 5.0, {
-// 		x: 1,
-// 		y: 1,
-// 		ease: "power1.inOut",
-// 	});
-// 	tl1.to(".kitchen .box-text", 5.0, {
-// 		x: 1,
-// 		ease: "power1.inOut",
-// 	});
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".atmosphere",
+				scrub: 1
+			}
+		})
+		.to(".atmosphere-title-text", { y: -500 }, 0);
 
-// 	tl1.from(
-// 		"#PC1 .pcside",
-// 		1,
-// 		{ x: -200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-1"
-// 	);
-// 	tl1.from(
-// 		"#PC1 .pcfront",
-// 		1,
-// 		{ x: 200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-.7"
-// 	);
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: ".programm-title-text",
+				scrub: 1
+			}
+		})
+		.fromTo(".programm-title-text", { x: 1000 }, { x: -600 }, 0);
+	
+	gsap
+		.timeline({
+			duration: 1,
+			scrollTrigger: {
+				trigger: ".our-halls",
+				// start: "top",
+				// end: () => '+=${document.querySelector(".about-image").offsetHeight}',
+				scrub: true
+			}
+		})
+		.to(".our-halls__image", { left: 0 }, 0);
+});
 
-// 	tl2.from("#PC1 .box", 1, { opacity: 0, scale: 0 });
-// 	tl2.to(".box", 0.5, {
-// 		left: "20%",
-// 		scale: 1.3,
-// 		borderColor: "white",
-// 		borderWidth: 12,
-// 		boxShadow: "1px 1px 0px 0px rgba(0,0,0,0.09)"
-// 	});
+new WOW().init();
 
-// 	const scene = new ScrollMagic.Scene({
-// 		triggerElement: "#PC1",
-// 		triggerHook: "onLeave",
-// 		duration: "100%"
-// 	})
-// 		.setPin("#PC1")
-// 		.setTween(tl1)
-// 		.addTo(controller);
-
-// 	const scene2 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC1 blockquote"
-// 	})
-// 		.setTween(tl2)
-// 		.addTo(controller);
-
-// 	function updatePercentage() {
-// 		//percent.innerHTML = (tl1.progress() *100 ).toFixed();
-// 		tl1.progress();
-// 		console.log(tl1.progress());
-// 	}
-
-// 	let tl3 = new TimelineMax({ onUpdate: updatePercentage2 });
-// 	let tl4 = new TimelineMax();
-// 	const controller2 = new ScrollMagic.Controller();
-
-// 	tl3.from("#PC2 blockquote", 0.5, { x: 200, opacity: 0 });
-// 	tl3.from("#PC2 span", 1, { width: 0 }, "=-.5");
-// 	tl3.from(
-// 		"#PC2 .pcside",
-// 		1,
-// 		{ x: -200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-1"
-// 	);
-// 	tl3.from(
-// 		"#PC2 .pcfront",
-// 		1,
-// 		{ x: 200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-.7"
-// 	);
-
-// 	tl4.from("#PC2 .box", 1, { opacity: 0, scale: 0 });
-// 	tl4.to("#PC2 .box", 0.5, {
-// 		left: "20%",
-// 		scale: 1.3,
-// 		borderColor: "white",
-// 		borderWidth: 12,
-// 		boxShadow: "1px 1px 0px 0px rgba(0,0,0,0.09)"
-// 	});
-
-// 	const scene3 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC2",
-// 		triggerHook: "onLeave",
-// 		duration: "100%"
-// 	})
-// 		.setPin("#PC2")
-// 		.setTween(tl3)
-// 		.addTo(controller2);
-
-// 	const scene4 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC2 blockquote"
-// 	})
-// 		.setTween(tl4)
-// 		.addTo(controller);
-
-// 	function updatePercentage2() {
-// 		tl3.progress();
-// 		console.log(tl1.progress());
-// 	}
-
-// 	let tl5 = new TimelineMax({ onUpdate: updatePercentage3 });
-// 	let tl6 = new TimelineMax();
-// 	const controller3 = new ScrollMagic.Controller();
-
-// 	tl5.from("#PC3 blockquote", 0.5, { x: 200, opacity: 0 });
-// 	tl5.from("#PC3 span", 1, { width: 0 }, "=-.5");
-// 	tl5.from(
-// 		"#PC3 .pcside",
-// 		1,
-// 		{ x: -200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-1"
-// 	);
-// 	tl5.from(
-// 		"#PC3 .pcfront",
-// 		1,
-// 		{ x: 200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-.7"
-// 	);
-
-// 	tl6.from("#PC3 .box", 1, { opacity: 0, scale: 0 });
-// 	tl6.to("#PC3 .box", 0.5, {
-// 		left: "20%",
-// 		scale: 1.3,
-// 		borderColor: "white",
-// 		borderWidth: 12,
-// 		boxShadow: "1px 1px 0px 0px rgba(0,0,0,0.09)"
-// 	});
-
-// 	const scene5 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC3",
-// 		triggerHook: "onLeave",
-// 		duration: "100%"
-// 	})
-// 		.setPin("#PC3")
-// 		.setTween(tl5)
-// 		.addTo(controller3);
-
-// 	const scene6 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC3 blockquote"
-// 	})
-// 		.setTween(tl6)
-// 		.addTo(controller3);
-
-// 	function updatePercentage3() {
-// 		tl5.progress();
-// 		console.log(tl1.progress());
-// 	}
-// 	let tl7 = new TimelineMax({ onUpdate: updatePercentage4 });
-// 	let tl8 = new TimelineMax();
-// 	const controller4 = new ScrollMagic.Controller();
-
-// 	tl7.from("#PC4 blockquote", 0.5, { x: 200, opacity: 0 });
-// 	tl7.from("#PC4 span", 1, { width: 0 }, "=-.5");
-// 	tl7.from(
-// 		"#PC4 .pcside",
-// 		1,
-// 		{ x: -200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-1"
-// 	);
-// 	tl7.from(
-// 		"#PC4 .pcfront",
-// 		1,
-// 		{ x: 200, opacity: 0, ease: Power4.easeInOut },
-// 		"=-.7"
-// 	);
-
-// 	tl8.from("#PC4 .box", 1, { opacity: 0, scale: 0 });
-// 	tl8.to("#PC4 .box", 0.5, {
-// 		left: "20%",
-// 		scale: 1.3,
-// 		borderColor: "white",
-// 		borderWidth: 12,
-// 		boxShadow: "1px 1px 0px 0px rgba(0,0,0,0.09)"
-// 	});
-
-// 	const scene7 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC4",
-// 		triggerHook: "onLeave",
-// 		duration: "100%"
-// 	})
-// 		.setPin("#PC4")
-// 		.setTween(tl7)
-// 		.addTo(controller4);
-
-// 	const scene8 = new ScrollMagic.Scene({
-// 		triggerElement: "#PC4 blockquote"
-// 	})
-// 		.setTween(tl8)
-// 		.addTo(controller4);
-
-// 	function updatePercentage4() {
-// 		tl7.progress();
-// 		console.log(tl1.progress());
-// 	}
-// };
+// scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
