@@ -219,6 +219,14 @@
   .header-fixed-block:nth-child(5)::before {
     display: none;
   }
+  .events-card-row .events-card__photo {
+    width: 270px;
+    height: 280px;
+  }
+  .events-card-row .events-card__body {
+    width: calc(100% - 270px);
+    padding: 0 0 0 20px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header {
@@ -762,6 +770,24 @@
   }
   .page {
     margin: 58px 0 0;
+  }
+  .events-wrapper-section {
+    padding: 50px 0 70px;
+  }
+  .events-card-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 30px;
+    height: auto;
+  }
+  .events-card-row .events-card__photo {
+    width: 100%;
+  }
+  .events-card-row .events-card__body {
+    width: 100%;
+    padding: 20px 0 0;
   }
 }
 @media only screen and (max-width: 480px) {
