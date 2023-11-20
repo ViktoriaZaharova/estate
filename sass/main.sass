@@ -137,7 +137,6 @@
 .kitchen-content
 	position: relative
 	z-index: 1
-	
 
 .kitchen-title-text
 	right: auto
@@ -585,7 +584,6 @@
 	.list-rating
 		margin: 25px 0 0
 
-
 // reviews page
 .reviews-wrapper-section
 	padding: 60px 0 140px
@@ -600,14 +598,14 @@
 	.reviews-card
 		margin: 0 60px 60px 0
 		max-width: 665px
-		width: 100%	
+		width: 100%
 
 .btn-toggle-reviews
-	margin: 27px auto 0	
+	margin: 27px auto 0
 
 // events page
 .events-wrapper-section
-	padding: 72px 0 88px		
+	padding: 72px 0 88px
 
 .events-card-row
 	height: auto
@@ -622,6 +620,121 @@
 		width: calc(100% - 344px)
 		padding: 0 0 0 30px
 	.date-text
-		margin: 0 0 23px	
+		margin: 0 0 23px
 	.btn
-		margin: 0	
+		margin: 0
+
+// event page
+.page-event-home
+	position: relative
+	z-index: 1
+	color: #000
+	padding: 94px 0
+	background: linear-gradient(0deg, #97B6B4 0%, #97B6B4 100%)
+	&::before
+		display: none
+	&__image
+		border-radius: 5px
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		max-width: 935px
+		width: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px
+	&__content
+		max-width: 546px
+
+.event-description
+	margin: 65px 0 44px
+
+.video-box
+	width: 100%
+	position: relative
+	z-index: 1
+	height: 562px
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%)
+		left: 0
+		top: 0
+		z-index: 1
+	&__bg
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__btn
+		position: absolute
+		left: 50%
+		top: 50%
+		color: #fff
+		z-index: 1
+		transform: translate(-50%,-50%)
+		display: flex
+		align-items: center
+		font-size: 24px
+		font-weight: bold
+		&:hover
+			color: $accent
+		&::after
+			content: ''
+			@include d-flex
+			margin: 0 0 0 53px
+			width: 94px
+			height: 94px
+			background: url('../img/play.svg') no-repeat center
+			background-size: 100%
+	video
+		width: 100%
+		height: 100%
+		object-fit: cover			
+
+.menu-slider
+	.slick-list
+		margin: 0 -15px
+	.slick-slide
+		padding: 0 15px
+	&__item
+		width: 100%
+		height: 373px
+		border-radius: 5px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px
+
+
+// delivery
+.page-delivery-home
+	.page__bg
+		transform: scale(-1,1)
+
+.image-box
+	width: 100%
+	height: 373px
+	@include d-flex
+	border-radius: 5px
+	img
+		border-radius: 5px
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+// contacts
+.page-contacts-home
+	color: #000
+	&::before
+		display: none			
+	h1
+		margin: 0 0 50px
+
+		

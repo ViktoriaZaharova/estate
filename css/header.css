@@ -54,16 +54,7 @@ header .container {
   color: #fff;
   padding: 22px 0;
   font-size: 16px;
-}
-.header-fixed::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: calc(100% - 1214px);
-  height: 100%;
-  z-index: -1;
-  background: #D6AE9F;
+  overflow: hidden;
 }
 .header-fixed .btn-burger {
   width: 37px;
@@ -118,7 +109,22 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 59px 0 auto;
+  margin: 0 0 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 0 59px 0 42px;
+}
+.mini-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 1400px;
+  height: calc(100% + 84px);
+  z-index: -2;
+  background: #D6AE9F;
 }
 .mini-menu li {
   margin: 0 30px 0 0;

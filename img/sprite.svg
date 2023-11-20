@@ -63,6 +63,12 @@
 	<symbol id="arrow-bottom" viewBox="0 0 28 16">
 		<path d="M26 1.5L14 12.5L2 1.5" stroke-width="4" />
 	</symbol>
+	<symbol id="prev" viewBox="0 0 32 58">
+		<path d="M29.8691 55.7401L2.99908 28.8701L29.8691 2" stroke-width="4" />
+	</symbol>
 
+	<symbol id="next" viewBox="0 0 32 58">
+		<path d="M1.86914 2L28.7392 28.8701L1.86914 55.7401" stroke-width="4" />
+	</symbol>
 
 </svg>

@@ -48,11 +48,9 @@
   .header-fixed {
     padding: 15px 0;
   }
-  .header-fixed::before {
-    width: 34%;
-  }
   .mini-menu {
-    margin: 0 30px 0 auto;
+    margin: 0 0 0 auto;
+    padding: 0 30px;
   }
   .mini-menu li {
     margin: 0 20px 0 0;
@@ -72,6 +70,9 @@
   .reviews-wrapper .reviews-card {
     margin: 0 0 20px 0;
     max-width: calc(50% - 10px);
+  }
+  .page-event-home__image {
+    max-width: 800px;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -226,6 +227,9 @@
   .events-card-row .events-card__body {
     width: calc(100% - 270px);
     padding: 0 0 0 20px;
+  }
+  .page-event-home__image {
+    max-width: 600px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -386,6 +390,39 @@
     bottom: 0;
     position: relative;
   }
+  .page-event-home {
+    padding: 70px 0;
+  }
+  .menu-slider__item {
+    height: 300px;
+  }
+  .slider-nav {
+    margin: 30px 0 0;
+  }
+  .slider-nav .slick-dots {
+    margin: 0 30px;
+  }
+  .slick-arrow {
+    width: 20px;
+    height: 45px;
+  }
+  .video-box {
+    height: 450px;
+  }
+  .video-box__btn {
+    font-size: 18px;
+  }
+  .video-box__btn::after {
+    width: 70px;
+    height: 70px;
+    margin: 0 0 0 20px;
+  }
+  .event-description {
+    margin: 50px 0;
+  }
+  .page-event-home__image {
+    max-width: 550px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .btn {
@@ -505,6 +542,21 @@
   }
   .reviews-wrapper-section {
     padding: 50px 0 70px;
+  }
+  .page-event-home {
+    padding: 30px 0 0;
+  }
+  .page-event-home__content {
+    max-width: none;
+  }
+  .page-event-home__image {
+    max-width: none;
+    position: relative;
+    margin: 20px auto 0;
+    height: auto;
+  }
+  .m-100 {
+    margin: 80px 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -629,6 +681,16 @@
   }
   h1, .h1 {
     margin: 0 0 30px;
+  }
+  .video-box {
+    height: 300px;
+  }
+  .video-box__btn::after {
+    width: 50px;
+    height: 50px;
+  }
+  .m-100 {
+    margin: 60px 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -788,6 +850,15 @@
   .events-card-row .events-card__body {
     width: 100%;
     padding: 20px 0 0;
+  }
+  .slick-dots li {
+    margin: 0 20px 0 0;
+  }
+  .slick-dots li:last-child {
+    margin: 0;
+  }
+  .m-36 {
+    margin: 26px 0;
   }
 }
 @media only screen and (max-width: 480px) {

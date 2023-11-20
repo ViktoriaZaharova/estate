@@ -35,16 +35,7 @@ header
 	color: #fff
 	padding: 22px 0
 	font-size: 16px
-	&::before
-		content: ''
-		position: absolute
-		right: 0
-		top: 0
-		width: calc(100% - 1214px)
-		height: 100%
-		z-index: -1
-		background: $accent
-
+	overflow: hidden
 	.btn-burger
 		width: 37px
 		height: 30px
@@ -79,7 +70,20 @@ header
 .mini-menu
 	display: flex
 	align-items: center
-	margin: 0 59px 0 auto
+	margin: 0 0 0 auto
+	position: relative
+	z-index: 1
+	padding: 0 59px 0 42px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translate(0,-50%)
+		width: 1400px
+		height: calc(100% + 84px)
+		z-index: -2
+		background: $accent
 	li
 		margin: 0 30px 0 0
 		&:last-child

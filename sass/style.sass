@@ -173,12 +173,10 @@ button, .btn
 	height: 65px
 	font-size: 20px
 
-.btn-lg-md 
+.btn-lg-md
 	height: 60px
 	padding: 20px 30px
 	font-size: 16px
-
-	
 
 .btn-group
 	flex-wrap: wrap
@@ -207,7 +205,7 @@ button, .btn
 		fill: none
 		stroke: #fff
 		@include d-flex
-		margin: 0 0 0 30px		
+		margin: 0 0 0 30px
 
 strong, b
 	font-weight: bold
@@ -247,12 +245,6 @@ h2, .h2
 	>*
 		padding: 0 10px
 
-.m-100
-	margin: 100px 0
-
-.m-80
-	margin: 80px 0
-
 .mb-30
 	margin-bottom: 30px
 
@@ -264,6 +256,15 @@ h2, .h2
 
 .mb-80
 	margin-bottom: 80px
+
+.m-100
+	margin: 100px 0
+
+.m-80
+	margin: 80px 0
+
+.m-36
+	margin: 36px 0
 
 .title-text
 	text-transform: uppercase
@@ -292,11 +293,65 @@ h2, .h2
 	font-size: 20px
 	font-weight: 300
 
+// .slick-slider
 .slick-slider
 	width: 100%
 
 .slick-slide
 	outline: none
+
+.slick-arrow
+	position: relative
+	@include d-flex
+	border: none
+	border-radius: 0
+	padding: 0
+	width: 26px
+	height: 53px
+	fill: none
+	stroke: $blue
+	background: transparent
+	cursor: pointer
+	transition: .3s
+	opacity: 1
+	z-index: 1
+	&:hover
+		stroke: $accent
+
+.slick-dots
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 0
+	bottom: 0
+	position: relative
+	list-style-type: none
+	li
+		cursor: pointer
+		transition: .3s
+		margin: 0 31px 0 0
+		width: 20px
+		height: 20px
+		min-width: 20px
+		border: 1px solid $blue
+		border-radius: 50%
+		&:last-child
+			margin: 0
+		button
+			display: none
+		&.slick-active
+			background: $blue
+
+.slider-nav
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 83px auto 0
+	.slick-next
+		order: 1
+	.slick-dots
+		margin: 0 125px
 
 //checkbox my
 .label-checkbox
@@ -361,10 +416,10 @@ h2, .h2
 		padding: 0
 		border: none
 		margin: 0 10px
-		color: #D6AE9F		
+		color: #D6AE9F
 
 .breadcrumb-item.active
-	color: #D6AE9F		
+	color: #D6AE9F
 
 .page
 	position: relative
@@ -390,5 +445,3 @@ h2, .h2
 		height: 100%
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)
 		z-index: -1
-
-

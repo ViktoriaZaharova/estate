@@ -47,6 +47,33 @@ $(function () {
 	});
 });
 
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});
+
+$('.menu-slider').slick({
+	slidesToShow: 3,
+	arrows: true,
+	dots: true,
+	appendDots: '.menu-slider__nav',
+	appendArrows: '.menu-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+})
 
 // animation
 // gsap.registerPlugin(ScrollTrigger) 
