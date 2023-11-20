@@ -239,7 +239,7 @@
 
 .atmosphere-title-text {
   color: #fff;
-  bottom: -117px;
+  bottom: 0;
 }
 
 .callback-box {
@@ -850,4 +850,31 @@
 }
 .reviews-card .list-rating {
   margin: 25px 0 0;
+}
+
+.reviews-wrapper-section {
+  padding: 60px 0 140px;
+  background: #F4F4F4;
+}
+
+.reviews-wrapper {
+  margin: 87px 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.reviews-wrapper .reviews-card {
+  margin: 0 60px 60px 0;
+  max-width: 665px;
+  width: 100%;
+}
+
+.btn-toggle-reviews {
+  margin: 27px auto 0;
 }

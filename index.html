@@ -132,8 +132,42 @@
 			</div>
 		</div>
 	</main>
-
+<div class="header-fixed header-scroll">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 d-flex flex-wrap align-items-center">
+				<a href="index.html" class="logo-header"><img src="img/logo-header.svg" alt=""></a>
+				<div class="header-fixed-block">
+					<p>Пн-чт: 11:00-24:00</p>
+					<p>Пт: 11:00-02:00</p>
+				</div>
+				<div class="header-fixed-block">
+					<p>Сб: 12:00-02:00</p>
+					<p>Вс: 12:00-24:00</p>
+				</div>
+				<div class="header-fixed-block">
+					<p>ул. Красная, 69</p>
+				</div>
+				<div class="header-fixed-block">
+					<a href="tel:+79023416969" class="header-fixed__link">+7 902 341 69 69</a>
+				</div>
+				<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#basket"></use>
+					</svg></a>
+				<ul class="mini-menu my-ul">
+					<li><a href="menu.html">меню</a></li>
+					<li><a href="delivery.html">доставка</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#reservationModal">забронировать</a></li>
+				</ul>
+				<a href="#" class="btn-burger"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#burger"></use>
+					</svg></a>
+			</div>
+		</div>
+	</div>
+</div>
 	<section class="about section-relative">
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
@@ -344,10 +378,13 @@
 			<div class="row">
 				<div class="col-12 col-md-4 mb-30">
 					<div class="programm-card">
-						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp"><img src="img/programm1.png" alt=""></a>
+						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp"><img
+								src="img/programm1.png" alt=""></a>
 						<div class="programm-card__body">
 							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-1s">25.10</div>
-							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-1s">Уникальный праздник для города</a>
+							<a href="#"
+								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-1s">Уникальный
+								праздник для города</a>
 							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-1s">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
@@ -356,10 +393,13 @@
 				</div>
 				<div class="col-12 col-md-4 mb-30">
 					<div class="programm-card">
-						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-1s"><img src="img/programm2.png" alt=""></a>
+						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-1s"><img
+								src="img/programm2.png" alt=""></a>
 						<div class="programm-card__body">
 							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-2s">25.10</div>
-							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-2s">Уникальный праздник для города</a>
+							<a href="#"
+								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-2s">Уникальный
+								праздник для города</a>
 							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-2s">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
@@ -368,10 +408,13 @@
 				</div>
 				<div class="col-12 col-md-4 mb-30">
 					<div class="programm-card">
-						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-2s"><img src="img/programm3.png" alt=""></a>
+						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-2s"><img
+								src="img/programm3.png" alt=""></a>
 						<div class="programm-card__body">
 							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-3s">25.10</div>
-							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-3s">Уникальный праздник для города</a>
+							<a href="#"
+								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-3s">Уникальный
+								праздник для города</a>
 							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-3s">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
@@ -476,7 +519,7 @@
 						Звонок администратору ресторана
 					</p>
 				</div>
-				<a href="#" class="btn btn-lg btn-blue" data-bs-toggle="modal" data-bs-target="#reserveModal">позвонить</a>
+				<a href="#" class="btn btn-lg btn-blue" data-bs-toggle="modal" data-bs-target="#callbackModal">позвонить</a>
 			</div>
 		</div>
 		<div class="category-box">
@@ -538,8 +581,9 @@
 								создают
 								атмосферу, в которой вы почувствуете себя как дома.</p>
 						</div>
-						<a href="#" class="btn btn-accent-light btn-reservation wow animate__animated animate__fadeInRight animate__delay-3s" data-bs-toggle="modal"
-							data-bs-target="#reserveModal">забронировать</a>
+						<a href="#"
+							class="btn btn-accent-light btn-reservation wow animate__animated animate__fadeInRight animate__delay-3s"
+							data-bs-toggle="modal" data-bs-target="#reservationModal">забронировать</a>
 					</div>
 				</div>
 				<div class="col-12 col-lg-6">
@@ -758,6 +802,93 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Хотите посетить наше заведение? Забронируйте место!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-reserved">
+						<div class="form-column">
+							<h3>Выберите формат</h3>
+							<label>
+								<select name="select" class="select-my">
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+								</select>
+							</label>
+							<label>
+								<input type="text" placeholder="Количество гостей" name="value_guests">
+							</label>
+						</div>
+						<div class="form-column">
+							<h3>Контактные данные и дата</h3>
+							<div class="form-row-column">
+								<label>
+									<input type="text" placeholder="Имя" name="name">
+								</label>
+								<label>
+									<input type="text" placeholder="Фамилия" name="first_name">
+								</label>
+							</div>
+							<div class="form-row">
+								<label>
+									<input type="text" placeholder="Телефон" name="phone" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Укажите дату" name="date">
+								</label>
+							</div>
+						</div>
+						<div class="form-column">
+							<a href="#" class="btn btn-md btn-blue">Уточнить дату</a>
+							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-column">
+								<h4>Если вы хотите получать наши спецпредложения, заполните поля:</h4>
+							</div>
+							<div class="form-column">
+								<div class="form-row-line">
+									<label>
+										<input type="text" placeholder="Дата вашего Дня рождения" name="date">
+									</label>
+									<label>
+										<input type="text" placeholder="e-mail" name="mail">
+									</label>
+
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip">?</div>
+										<div class="tooltip-box">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo numquam odit non mollitia,
+												nobis nisi, magni eligendi sint autem eius cum sit libero tenetur et vitae ut in nostrum esse!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-footer">
+							<button type="submit" class="btn btn-md btn-accent">забронировать</button>
+							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

@@ -28,6 +28,26 @@ $('.mobile-menu__close').on('click', function (e) {
 	$('.mobile-menu').fadeOut();
 });
 
+
+$(function () {
+	let header = $('.header-scroll').offset().top;
+	let hederHeight = $('.header-scroll').height(); // вычисляем высоту шапки
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > header) {
+			$('.header-scroll').addClass('fixed');
+			$('body').css({
+				'paddingTop': hederHeight + 'px' // делаем отступ у body, равный высоте шапки
+			});
+		} else {
+			$('.header-scroll').removeClass('fixed');
+			$('body').css({
+				'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+			})
+		}
+	});
+});
+
+
 // animation
 // gsap.registerPlugin(ScrollTrigger) 
 let mm = gsap.matchMedia();
@@ -88,7 +108,7 @@ mm.add("(min-width: 992px)", () => {
 				scrub: 1
 			}
 		})
-		.to(".atmosphere-title-text", { y: -500 }, 0);
+		.to(".atmosphere-title-text", { bottom: "100px" }, 0);
 	
 	gsap
 		.timeline({

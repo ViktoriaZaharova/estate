@@ -47,7 +47,7 @@ body
 	color: #000
 
 html, body
-	overflow-x: hidden	
+	overflow-x: hidden
 
 img
 	display: block
@@ -173,6 +173,13 @@ button, .btn
 	height: 65px
 	font-size: 20px
 
+.btn-lg-md 
+	height: 60px
+	padding: 20px 30px
+	font-size: 16px
+
+	
+
 .btn-group
 	flex-wrap: wrap
 	.btn
@@ -192,6 +199,16 @@ button, .btn
 	width: 100%
 	height: 100%
 
+.btn-toggle
+	&__icon
+		width: 24px
+		min-width: 24px
+		height: 11px
+		fill: none
+		stroke: #fff
+		@include d-flex
+		margin: 0 0 0 30px		
+
 strong, b
 	font-weight: bold
 	display: inline-block
@@ -206,8 +223,12 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
-.h1
+h1, .h1
 	font-size: 80px
+	width: 100%
+	margin: 0 0 50px
+
+.h1
 	text-transform: uppercase
 
 h2, .h2
@@ -239,7 +260,7 @@ h2, .h2
 	margin-bottom: 40px
 
 .mb-42
-	margin-bottom: 42px	
+	margin-bottom: 42px
 
 .mb-80
 	margin-bottom: 80px
@@ -316,29 +337,58 @@ h2, .h2
 		margin: 0 17px 0 0
 		fill: #D6AE9F
 		&:last-child
-			margin: 0	
+			margin: 0
 
-// animated css
-// .logo-animation
-// 	position: relative
+.nav-breadcrumbs
+	width: 100%
+	margin: 0 0 84px
+
+.breadcrumb
+	margin: 0
+	color: #D6AE9F
+	font-size: 14px
+	a
+		color: #D6AE9F
+		&:hover
+			color: #fff
+
+.breadcrumb-item+.breadcrumb-item
+	padding: 0
+	display: flex
+	align-items: center
+	&::before
+		content: '>'
+		padding: 0
+		border: none
+		margin: 0 10px
+		color: #D6AE9F		
+
+.breadcrumb-item.active
+	color: #D6AE9F		
+
+.page
+	position: relative
+	z-index: 1
+	color: #fff
+	min-height: 550px
+	padding: 38px 0 120px
+	margin: 95px 0 0
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: -2
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)
+		z-index: -1
 
 
-// .section-animate
-// 	.logo-animation
-// 		img
-// 			transform: translateY(-100%)	
-// 	.title-text
-// 		transform: translateY(100%) rotate(180deg)	
-
-			
-// .show-animate
-// 	.logo-animation
-// 		img
-// 			transform: none	
-// 			will-change: transform
-// 	.title-text
-// 		will-change: transform
-// 		transform: translateY(-100%) rotate(180deg)
-// 	.about-image
-// 		img
-// 			transform: translate(0,0)	

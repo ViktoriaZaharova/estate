@@ -9,14 +9,12 @@ header
 	padding: 46px 0
 	.container
 		padding: 0 210px 0 58px
-		max-width: 1900px	
-
+		max-width: 1900px
 
 .logo
 	max-width: 144px
 	width: 100%
 	@include d-flex
-
 
 .btn-burger
 	@include d-flex
@@ -25,7 +23,85 @@ header
 	fill: #fff
 	margin: 0 0 0 auto
 	&:hover
-		fill: $accent	
+		fill: $accent
+
+.header-fixed
+	width: 100%
+	z-index: 7
+	left: 0
+	top: 0
+	position: relative
+	background: #97B6B4
+	color: #fff
+	padding: 22px 0
+	font-size: 16px
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		width: calc(100% - 1214px)
+		height: 100%
+		z-index: -1
+		background: $accent
+
+	.btn-burger
+		width: 37px
+		height: 30px
+		margin: 0
+	&__link
+		font-size: 20px
+		color: #fff
+		&:hover
+			color: $accent
+
+.header-scroll
+	&.fixed
+		position: fixed
+
+.header
+	position: fixed
+
+.logo-header
+	max-width: 126px
+	width: 100%
+	@include d-flex
+	margin: 0 42px 0 0
+
+.btn-basket
+	fill: #fff
+	width: 45px
+	height: 34px
+	min-width: 45px
+	&:hover
+		fill: $accent
+
+.mini-menu
+	display: flex
+	align-items: center
+	margin: 0 59px 0 auto
+	li
+		margin: 0 30px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #fff
+			&:hover
+				color: $blue
+
+.header-fixed-block
+	margin: 0 22px 0 0
+	padding: 0 22px 0 0
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translate(0,-50%)
+		background: #fff
+		width: 1px
+		height: 40px
 
 // mobile menu
 .mobile-menu
@@ -33,7 +109,7 @@ header
 	right: 0
 	top: 0
 	width: 100%
-	max-width: 442px	
+	max-width: 442px
 	height: 100%
 	overflow-y: auto
 	z-index: 10
@@ -57,11 +133,11 @@ header
 		width: 100%
 	&__body
 		width: 100%
-		padding: 60px 0	
+		padding: 60px 0
 		border-top: 1px solid #97B6B4
 		border-bottom: 1px solid #97B6B4
 	&__footer
-		padding: 60px 0 0	
+		padding: 60px 0 0
 	.phone
 		color: #000
 		font-size: 24px
@@ -84,15 +160,15 @@ header
 				@include d-flex
 				fill: $blue
 				&:hover
-					fill: $accent	
+					fill: $accent
 
 .logo-menu
 	max-width: 137px
 	width: 100%
-	@include d-flex		
+	@include d-flex
 
 .menu
-	li	
+	li
 		margin: 0 0 30px
 		&:last-child
 			margin: 0
