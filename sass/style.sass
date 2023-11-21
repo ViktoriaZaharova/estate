@@ -475,12 +475,12 @@ h2, .h2
 			color: #464646
 	.select-my
 		border: 1px solid #000
-		color: #464646		
+		color: #464646
 		font-weight: 300
 	.form-row
 		justify-content: space-between
 		label
-			width: calc(50% - 7.5px)	
+			width: calc(50% - 7.5px)
 
 .select-my
 	background: url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
@@ -488,24 +488,34 @@ h2, .h2
 	padding: 0 44px 0 26px
 	height: 60px
 
+.select-my-white
+	background: url('../img/arrow-select-white.svg') no-repeat calc(100% - 20px) center
+
 .form-row
 	width: 100%
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
-	
 
 .input-icon
 	position: absolute
 	right: 21px
 	top: 20px
-	@include d-flex	
+	@include d-flex
 
 .tooltip-wrapper
 	position: relative
 	&:hover
 		.tooltip-box
 			display: block
+
+.tooltip-wrapper-accent
+	.btn-tooltip
+		background: $accent
+		width: 31px
+		height: 31px
+		min-width: 31px
+		font-size: 18px			
 
 .btn-tooltip
 	width: 46px
@@ -532,5 +542,29 @@ h2, .h2
 	background: #fff
 	font-size: 14px
 	color: #000
-	z-index: 3		
-	display: none	
+	z-index: 3
+	display: none
+
+.nav-tabs
+	color: #8A8A8A
+	font-size: 24px
+	width: 100%
+	border: none
+	.nav-link
+		margin: 0 40px 0 0
+		border: none
+		border-radius: 0
+		border-bottom: 1px solid transparent
+		padding: 0 0 13px
+		color: #8A8A8A
+		font-weight: normal
+		&:last-child
+			margin: 0
+		&.active
+			font-weight: bold
+			color: #000
+			border-bottom-color: $blue
+
+.tab-content
+	margin: 48px 0 0
+	width: 100%

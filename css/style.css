@@ -691,6 +691,10 @@ h2, .h2 {
   height: 60px;
 }
 
+.select-my-white {
+  background: url("../img/arrow-select-white.svg") no-repeat calc(100% - 20px) center;
+}
+
 .form-row {
   width: 100%;
   display: -webkit-box;
@@ -723,6 +727,14 @@ h2, .h2 {
 }
 .tooltip-wrapper:hover .tooltip-box {
   display: block;
+}
+
+.tooltip-wrapper-accent .btn-tooltip {
+  background: #D6AE9F;
+  width: 31px;
+  height: 31px;
+  min-width: 31px;
+  font-size: 18px;
 }
 
 .btn-tooltip {
@@ -762,4 +774,33 @@ h2, .h2 {
   color: #000;
   z-index: 3;
   display: none;
+}
+
+.nav-tabs {
+  color: #8A8A8A;
+  font-size: 24px;
+  width: 100%;
+  border: none;
+}
+.nav-tabs .nav-link {
+  margin: 0 40px 0 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 13px;
+  color: #8A8A8A;
+  font-weight: normal;
+}
+.nav-tabs .nav-link:last-child {
+  margin: 0;
+}
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  color: #000;
+  border-bottom-color: #97B6B4;
+}
+
+.tab-content {
+  margin: 48px 0 0;
+  width: 100%;
 }

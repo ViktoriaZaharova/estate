@@ -78,6 +78,13 @@
     max-width: 700px;
     width: 100%;
   }
+  .reserved-wrapper {
+    padding: 30px;
+  }
+  .reserved-wrapper__title {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   header .container {
@@ -499,6 +506,19 @@
   .m-80 {
     margin: 60px 0;
   }
+  .form-reserved h4 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
+  .reserved-section {
+    margin: 0 0 50px;
+  }
+  .form-row-column, .form-reserved .form-row-line label {
+    width: calc(50% - 10px);
+  }
+  .gallery-category {
+    margin: 60px 0 50px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .btn {
@@ -643,6 +663,51 @@
   .page-basket-home {
     padding: 40px 0 0;
   }
+  .nav-tabs {
+    font-size: 20px;
+  }
+  .nav-tabs .nav-link {
+    margin: 0 20px 0 0;
+  }
+  .form-footer {
+    margin: 30px 0 0;
+  }
+  .form-reserved .form-column {
+    width: 100%;
+    padding: 0 0 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 20px;
+  }
+  .form-reserved .form-column:first-child {
+    max-width: none;
+    width: 100%;
+  }
+  .form-reserved .form-column:last-child {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .form-reserved .special-proposition {
+    max-width: none;
+    margin: 0 0 20px;
+  }
+  .form-reserved .form-row-line {
+    width: 100%;
+    padding: 0;
+  }
+  .form-reserved input, .form-reserved select {
+    height: 50px;
+  }
+  .form-body {
+    margin: 0 0 30px;
+  }
+  .select-my {
+    background-size: 18px;
+  }
+  input, textarea, select {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .btn {
@@ -776,6 +841,19 @@
   }
   .m-100 {
     margin: 60px 0;
+  }
+  .nav-tabs {
+    font-size: 18px;
+  }
+  .nav-tabs .nav-link {
+    padding: 0 0 10px;
+    margin: 0 15px 5px 0;
+  }
+  .nav-tabs .nav-link:last-child {
+    margin: 0;
+  }
+  .tab-content {
+    margin: 20px 0 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -972,6 +1050,34 @@
     height: 40px;
     min-width: 40px;
     font-size: 18px;
+  }
+  .form-row-column, .form-reserved .form-row-line label {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .form-row-column:last-child, .form-reserved .form-row-line label:last-child {
+    margin: 0 0 20px;
+  }
+  .form-reserved h4 {
+    font-size: 18px;
+  }
+  .form-reserved .form-body {
+    margin: 0;
+  }
+  .form-reserved [type=submit] {
+    width: 100%;
+  }
+  .form-reserved .consent {
+    margin: 10px auto 0;
+  }
+  .form-footer {
+    margin: 20px 0 0;
+  }
+  .reserved-wrapper {
+    padding: 30px 20px;
+  }
+  .reserved-wrapper__title {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 480px) {
