@@ -1078,3 +1078,32 @@
 .page-contacts-home h1 {
   margin: 0 0 50px;
 }
+.page-contacts-home .address {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 25px 0 60px;
+}
+.page-contacts-home .list-messangers {
+  margin: 77px 0 0;
+}
+.page-contacts-home .list-messangers li a {
+  fill: #97B6B4;
+  width: 32px;
+  height: 32px;
+}
+
+.contacts-mail {
+  margin: 0 0 52px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #97B6B4;
+}
+.contacts-mail:hover {
+  color: #D6AE9F;
+}
+
+.map-contacts {
+  height: 100%;
+  max-width: 1061px;
+  width: 100%;
+}

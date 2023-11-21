@@ -74,6 +74,10 @@
   .page-event-home__image {
     max-width: 800px;
   }
+  .map-contacts {
+    max-width: 700px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1600px) {
   header .container {
@@ -230,6 +234,26 @@
   }
   .page-event-home__image {
     max-width: 600px;
+  }
+  .map-contacts {
+    position: absolute;
+    max-width: 600px;
+    margin: 0;
+    height: 100%;
+  }
+  .page-contacts-home h1 {
+    margin: 0 0 30px;
+  }
+  .page-contacts-home .address {
+    font-size: 20px;
+    margin: 20px 0 30px;
+  }
+  .page-contacts-home .list-messangers {
+    margin: 30px 0 0;
+  }
+  .contacts-mail {
+    margin: 0 0 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -557,6 +581,12 @@
   }
   .m-100 {
     margin: 80px 0;
+  }
+  .map-contacts {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 20px 0 0;
   }
 }
 @media only screen and (max-width: 768px) {
