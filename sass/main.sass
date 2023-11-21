@@ -943,7 +943,7 @@
 		&:last-child
 			margin: 0
 	input
-		height: 60px		
+		height: 60px
 	h4
 		font-size: 24px
 		font-weight: 300
@@ -984,7 +984,7 @@
 			&:last-child
 				margin: 0
 	.form-body
-		margin: 0 0 46px			
+		margin: 0 0 46px
 
 .form-body
 	width: 100%
@@ -1047,3 +1047,142 @@
 		max-width: 277px
 	[type="submit"]	
 		width: 100%
+
+// photoshoot page
+.photoshoot-section
+	margin: 120px 0 90px
+
+.photoshoot-box
+	width: 100%
+	height: 100%
+	@include d-flex
+	overflow: hidden
+	height: 686px
+	border-radius: 5px
+	margin: 0 0 34px
+	&:last-child
+		margin: 0
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 5px
+	&.h321
+		height: 321px
+	&.h331
+		height: 331px
+	&.h473
+		height: 473px
+
+.halls-section-wrapper
+	h2
+		margin: 0 0 72px
+
+.advantages-section
+	position: relative
+
+	h2
+		margin: 0 0 46px 60px
+		max-width: 386px
+
+.interiors
+	&__content
+		padding: 91px 0 0
+		position: relative
+		max-width: 969px
+		width: 100%
+		&:before
+			content: ''
+			position: absolute
+			z-index: -1
+			right: 0
+			top: 0
+			background: #D6AE9F
+			width: 100%
+			height: 100%
+	&__img
+		max-width: 725px
+		width: 100%
+		border-radius: 5px
+		height: 544px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px
+
+.fabulous-photos
+	position: relative
+	margin: -428px 0 0
+	&__content
+		position: relative
+		padding: 200px 0 0
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			right: 0
+			top: 0
+			width: calc(100% + 1000px)
+			height: 100%
+			background: $blue
+	.h2
+		margin: 0 149px 0 auto
+		max-width: 362px
+		padding: 0 0 225px	
+	&__img
+		min-width: 1690px
+		height: 750px
+		overflow: hidden
+		border-radius: 5px
+		@include d-flex
+		float: right
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px		
+
+.impressions
+	margin: -156px 0 0
+	position: relative
+	z-index: 1
+	&__content
+		position: relative
+		padding: 91px 79px 166px 96px
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			left: 0
+			top: 0
+			width: calc(100% + 1000px)
+			height: 100%
+			background: $blue
+	.h2
+		margin: 0 0 137px auto
+		width: fit-content
+	&__img
+		height: 529px
+		border-radius: 5px
+		@include d-flex
+		min-width: 1061px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px	
+	.form-callback
+		max-width: 429px
+		.box-text
+			margin: 0 0 66px	
+					
+.form-callback-v2
+	label
+		max-width: 305px
+		margin: 0 0 30px
+	.consent
+		margin: 30px 0 0
+		max-width: 277px
+		color: #000					
