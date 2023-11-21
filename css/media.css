@@ -447,6 +447,58 @@
   .page-event-home__image {
     max-width: 550px;
   }
+  .page-basket-home h1 {
+    margin: 0 0 30px;
+  }
+  .basket-card__title {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+  .basket-card__body {
+    padding: 0 10px 0 20px;
+  }
+  .basket-total {
+    padding: 20px 0;
+    margin: 30px 0 0;
+  }
+  .basket-total::before {
+    width: calc(100% + 260px);
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 100%;
+  }
+  .list-checkbox li {
+    margin: 0 0 20px;
+  }
+  .list-checkbox li:last-child {
+    margin: 0;
+  }
+  .label-checkbox {
+    font-size: 20px;
+  }
+  .checkbox-custom {
+    margin: 0 20px 0 0;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+  .checkbox-custom::before {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+  }
+  .form-basket .form-column {
+    max-width: none;
+  }
+  .form-basket .form-footer {
+    margin: 20px 0 0;
+  }
+  .form-basket .consent {
+    max-width: none;
+  }
+  .m-80 {
+    margin: 60px 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .btn {
@@ -587,6 +639,9 @@
     height: auto;
     position: relative;
     margin: 20px 0 0;
+  }
+  .page-basket-home {
+    padding: 40px 0 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -890,6 +945,34 @@
   .m-36 {
     margin: 26px 0;
   }
+  label {
+    margin: 0 0 20px;
+  }
+  .basket-card__footer {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    border: none;
+    border-top: 1px solid #97B6B4;
+    padding: 10px 0 0;
+    margin: 10px 0 0;
+  }
+  .basket-card__body {
+    padding: 0 0 0 20px;
+    width: calc(100% - 124px);
+  }
+  .basket-total h3 {
+    margin: 0 0 20px;
+  }
+  .form-basket [type=submit] {
+    margin: 20px 0 0;
+  }
+  .btn-tooltip {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .home .schedule-box {
@@ -934,5 +1017,21 @@
   }
   .category-box .btn-group .btn {
     margin: 0 0 10px;
+  }
+  .basket-card {
+    text-align: center;
+  }
+  .basket-card__body {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  .basket-card__photo {
+    margin: 0 auto;
+  }
+  .basket-card__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

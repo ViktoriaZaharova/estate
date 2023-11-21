@@ -131,7 +131,8 @@ input[type=radio], input[type=checkbox] {
 label {
   display: block;
   width: 100%;
-  margin: 0 0 29px;
+  margin: 0 0 30px;
+  position: relative;
 }
 label:last-child {
   margin: 0;
@@ -501,33 +502,44 @@ h2, .h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
 }
-
-.inp-check {
+.label-checkbox input {
   display: none;
+}
+.label-checkbox input:checked ~ .checkbox-custom::before {
+  background: #97B6B4;
 }
 
 .checkbox-custom {
-  margin: 0 12px 0 0;
+  margin: 0 27px 0 0;
   position: relative;
-  border-radius: 6px;
+  border: 1px solid #000;
+  border-radius: 5px;
   background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
   cursor: pointer;
 }
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.checkbox-custom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .list-rating {
@@ -624,4 +636,130 @@ h2, .h2 {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: -1;
+}
+
+.page-not-overlay::before {
+  display: none;
+}
+
+.form-black label {
+  margin: 0 0 20px;
+}
+.form-black label:last-child {
+  margin: 0;
+}
+.form-black input {
+  border: 1px solid #000;
+  color: #464646;
+  height: 60px;
+  font-weight: 300;
+  padding: 0 26px;
+}
+.form-black input::-webkit-input-placeholder {
+  color: #464646;
+}
+.form-black input::-moz-placeholder {
+  color: #464646;
+}
+.form-black input:-ms-input-placeholder {
+  color: #464646;
+}
+.form-black input::-ms-input-placeholder {
+  color: #464646;
+}
+.form-black input::placeholder {
+  color: #464646;
+}
+.form-black .select-my {
+  border: 1px solid #000;
+  color: #464646;
+  font-weight: 300;
+}
+.form-black .form-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-black .form-row label {
+  width: calc(50% - 7.5px);
+}
+
+.select-my {
+  background: url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center;
+  background-size: 23px;
+  padding: 0 44px 0 26px;
+  height: 60px;
+}
+
+.form-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.input-icon {
+  position: absolute;
+  right: 21px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tooltip-wrapper {
+  position: relative;
+}
+.tooltip-wrapper:hover .tooltip-box {
+  display: block;
+}
+
+.btn-tooltip {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 50%;
+  color: #fff;
+  background: #97B6B4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 100%;
+  margin: 0 0 10px;
+  max-width: 220px;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 14px;
+  color: #000;
+  z-index: 3;
+  display: none;
 }

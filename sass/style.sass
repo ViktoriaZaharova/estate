@@ -99,8 +99,8 @@ input[type="radio"], input[type="checkbox"]
 label
 	display: block
 	width: 100%
-	margin: 0 0 29px
-
+	margin: 0 0 30px
+	position: relative
 	&:last-child
 		margin: 0
 
@@ -357,28 +357,38 @@ h2, .h2
 .label-checkbox
 	position: relative
 	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
-
-.inp-check
-	display: none
+	align-items: center
+	color: #000
+	font-size: 24px
+	font-weight: 300
+	cursor: pointer
+	input
+		display: none
+		&:checked ~ .checkbox-custom
+			&::before
+				background: $blue
 
 .checkbox-custom
-	margin: 0 12px 0 0
+	margin: 0 27px 0 0
 	position: relative
-	border-radius: 6px
+	border: 1px solid #000
+	border-radius: 5px
 	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
+	width: 35px
+	height: 35px
+	min-width: 35px
 	cursor: pointer
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		border-radius: 5px
+		width: calc(100% - 14px)
+		height: calc(100% - 14px)
+		transition: .3s ease
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
 //checkbox my end
 
 .list-rating
@@ -445,3 +455,82 @@ h2, .h2
 		height: 100%
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)
 		z-index: -1
+
+.page-not-overlay
+	&::before
+		display: none
+
+.form-black
+	label
+		margin: 0 0 20px
+		&:last-child
+			margin: 0
+	input
+		border: 1px solid #000
+		color: #464646
+		height: 60px
+		font-weight: 300
+		padding: 0 26px
+		&::placeholder
+			color: #464646
+	.select-my
+		border: 1px solid #000
+		color: #464646		
+		font-weight: 300
+	.form-row
+		justify-content: space-between
+		label
+			width: calc(50% - 7.5px)	
+
+.select-my
+	background: url('../img/arrow-select.svg') no-repeat calc(100% - 20px) center
+	background-size: 23px
+	padding: 0 44px 0 26px
+	height: 60px
+
+.form-row
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	
+
+.input-icon
+	position: absolute
+	right: 21px
+	top: 20px
+	@include d-flex	
+
+.tooltip-wrapper
+	position: relative
+	&:hover
+		.tooltip-box
+			display: block
+
+.btn-tooltip
+	width: 46px
+	height: 46px
+	min-width: 46px
+	border-radius: 50%
+	color: #fff
+	background: $blue
+	@include d-flex
+	font-size: 24px
+	font-weight: bold
+	cursor: pointer
+
+.tooltip-box
+	position: absolute
+	left: 50%
+	transform: translate(-50%,0)
+	bottom: 100%
+	margin: 0 0 10px
+	max-width: 220px
+	min-width: 220px
+	padding: 10px
+	border-radius: 5px
+	background: #fff
+	font-size: 14px
+	color: #000
+	z-index: 3		
+	display: none	

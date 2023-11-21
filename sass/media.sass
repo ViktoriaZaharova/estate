@@ -242,7 +242,7 @@
 			font-size: 20px
 			margin: 20px 0 30px
 		.list-messangers
-			margin: 30px 0 0	
+			margin: 30px 0 0
 
 	.contacts-mail
 		margin: 0 0 30px
@@ -301,9 +301,6 @@
 	.kitchen
 		h2
 			margin: 0 0 30px
-
-	// .kitchen-title-text
-	// 	bottom: 50%		
 
 	.box-text
 		font-size: 18px
@@ -429,6 +426,55 @@
 	.page-event-home__image
 		max-width: 550px
 
+	.page-basket-home
+		h1
+			margin: 0 0 30px
+
+	.basket-card
+		&__title
+			font-size: 20px
+			margin: 0 0 20px
+		&__body
+			padding: 0 10px 0 20px
+
+	.basket-total
+		padding: 20px 0
+		margin: 30px 0 0
+		&::before
+			width: calc(100% + 260px)
+			left: 50%
+			transform: translate(-50%,0)
+			height: 100%
+
+	.list-checkbox
+		li
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+
+	.label-checkbox
+		font-size: 20px
+
+	.checkbox-custom
+		margin: 0 20px 0 0
+		width: 24px
+		height: 24px
+		min-width: 24px
+		&::before
+			width: calc(100% - 6px)
+			height: calc(100% - 6px)
+
+	.form-basket
+		.form-column
+			max-width: none
+		.form-footer
+			margin: 20px 0 0
+		.consent
+			max-width: none
+
+	.m-80
+		margin: 60px 0				
+
 @media only screen and (max-width: 992px)
 	.btn
 		padding: 12px 30px
@@ -553,7 +599,10 @@
 		max-width: 100%
 		height: auto
 		position: relative
-		margin: 20px 0 0	
+		margin: 20px 0 0
+
+	.page-basket-home
+		padding: 40px 0 0	
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -821,6 +870,35 @@
 	.m-36
 		margin: 26px 0
 
+	label
+		margin: 0 0 20px
+
+	.basket-card
+		&__footer	
+			width: 100%
+			height: auto
+			min-height: auto
+			border: none
+			border-top: 1px solid #97B6B4
+			padding: 10px 0 0
+			margin: 10px 0 0
+		&__body
+			padding: 0 0 0 20px
+			width: calc(100% - 124px)	
+
+	.basket-total 
+		h3
+			margin: 0 0 20px
+
+	.form-basket [type=submit]
+		margin: 20px 0 0		
+
+	.btn-tooltip
+		width: 40px
+		height: 40px
+		min-width: 40px
+		font-size: 18px			
+
 @media only screen and (max-width: 480px)
 	.home
 		.schedule-box
@@ -861,5 +939,16 @@
 		.btn-group
 			.btn
 				margin: 0 0 10px
+
+	.basket-card
+		text-align: center
+		&__body
+			width: 100%
+			padding: 0
+			margin: 10px 0 0
+		&__photo
+			margin: 0 auto
+		&__content
+			justify-content: center					
 
 @media only screen and (max-width: 370px)
