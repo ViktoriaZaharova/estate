@@ -594,6 +594,17 @@
     width: calc(100% + 300px);
     min-width: auto;
   }
+  .product-photo {
+    height: auto;
+    max-width: none;
+    margin: 0 0 30px;
+  }
+  .page-menu-home__content .box-text, .page-menu-home__content .price-wrapper {
+    margin: 20px 0;
+  }
+  .list-characteristics {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .btn {
@@ -1230,6 +1241,18 @@
   }
   .logo-header {
     max-width: 70px;
+  }
+  .list-characteristics li p {
+    max-width: none;
+    width: 100%;
+    margin: 0 0 5px;
+  }
+  .page-menu-home {
+    padding: 50px 0 60px;
+  }
+  .page-menu-home .btn-group .btn {
+    width: 100%;
+    margin: 0 0 10px;
   }
 }
 @media only screen and (max-width: 420px) {
