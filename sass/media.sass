@@ -139,6 +139,11 @@
 	header
 		padding: 30px 0
 
+	.estate-now-gallery
+		min-width: 1000px
+		&__item
+			min-width: 1000px
+
 @media only screen and (max-width: 1400px)
 	.phone
 		font-size: 24px
@@ -294,6 +299,23 @@
 				margin: 0 0 30px
 		.h2
 			margin: 0 0 40px auto
+
+	.menu-sidebar
+		padding: 0 0 30px
+		&__list
+			font-size: 20px
+			li
+				margin: 0 0 20px
+
+	.menu-catalog
+		padding: 60px 0 40px
+
+	.page-menu-catalog-home .btn-group
+		margin: 30px 0 0
+		.btn
+			margin: 0 20px 10px 0
+			&:last-child
+				margin: 0
 
 @media only screen and (max-width: 1200px)
 	header
@@ -556,7 +578,7 @@
 		margin: 0
 		&__content
 			padding: 40px 0 0
-			
+
 		.h2
 			max-width: none
 			padding: 0 0 30px
@@ -574,7 +596,16 @@
 		margin: 20px 0
 
 	.list-characteristics
-		font-size: 18px				
+		font-size: 18px
+
+	.estate-now
+		margin: 40px 0
+
+	.estate-now-gallery
+		margin: 30px 0 0
+
+	.blockquote
+		font-size: 18px			
 
 @media only screen and (max-width: 992px)
 	.btn
@@ -751,7 +782,6 @@
 			min-width: auto
 			width: 100%
 			float: none
-	
 
 	.impressions
 		.h2
@@ -773,6 +803,93 @@
 
 	.photoshoot-box
 		height: 550px
+
+	.menu-catalog
+		padding: 0
+		margin: 0 0 40px
+
+	.menu-sidebar
+		padding: 20px 0
+		margin: 0 0 20px
+		max-width: none
+		width: 100%
+		&__list
+			width: 100%
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+			text-align: center
+			li
+				width: 20%
+				margin: 0
+				&:last-child
+					margin: 0
+				a
+					text-align: center
+					width: 100%
+					padding: 7px 0
+					span
+						margin: 4px 0 0
+
+		&::before
+			height: 100%
+			width: calc(100% + 100px)
+			left: 50%
+			transform: translate(-50%,0)
+
+	.mb-60
+		margin-bottom: 40px
+
+	.owner
+		margin: 0
+		&__content
+			padding: 30px 0 30px 30px
+		h2
+			margin: 0 0 30px
+		&__photo
+			height: auto
+
+	.blockquote
+		text-indent: 40px
+		&:before, &:after
+			font-size: 60px
+		&::before
+			left: -40px
+			top: -40px
+		&:after
+			bottom: -30px
+			right: 0
+			left: auto
+
+	.estate-now
+		.slider-nav
+			margin: 30px 0 0 
+		h2
+			margin: 0 0 30px	
+
+	.estate-now-gallery
+		min-width: auto
+		margin: 30px 0 0
+		&__item
+			min-width: auto
+			width: 100%
+
+	.video-about-slider 
+		padding: 0 40px
+
+	.slick-arrow-v2
+		&.slick-prev
+			left: 0
+		&.slick-next
+			right: 0	
+
+	.map-attractions-section
+		padding: 60px 0 0
+
+	.map-attractions-box
+		min-width: auto
+		height: 600px
+		width: 100%						
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -907,6 +1024,11 @@
 	.form-callback-certificate .consent
 		max-width: none
 
+	.menu-sidebar
+		&__list
+			li
+				width: 33.33%
+
 @media only screen and (max-width: 576px)
 	.home-image
 		display: none
@@ -945,12 +1067,12 @@
 
 	.consent
 		max-width: none
-		margin: 10px 0 0
+		margin: 10px 0 0 
 
 	.form-callback
 		[type="submit"] 
-		max-width: none
-		width: 100%
+			max-width: none
+			width: 100%
 		.form-text
 			margin: 0 0 20px
 			font-size: 14px
@@ -1120,6 +1242,30 @@
 	.photoshoot-section
 		margin: 60px 0 50px
 
+	.menu-sidebar
+		&__list
+			li
+				width: 50%
+
+	.page-menu-catalog-home .btn
+		width: 100%
+
+	.btn-icon
+		margin: 0 0 0 15px
+
+	.map-attractions-box
+		height: 400px
+
+	.video-about__box:after
+		width: 60px
+		height: 60px
+
+	.video-about-slider .slick-dots
+		margin: 30px auto 0
+
+	.video-box__btn
+		font-size: 16px				
+
 @media only screen and (max-width: 480px)
 	.home
 		.schedule-box
@@ -1146,8 +1292,8 @@
 	.logo-header
 		max-width: 70px
 
-	.list-characteristics 
-		li 
+	.list-characteristics
+		li
 			p
 				max-width: none
 				width: 100%
@@ -1159,7 +1305,6 @@
 			.btn
 				width: 100%
 				margin: 0 0 10px
-
 
 @media only screen and (max-width: 420px)
 	h1, .h1

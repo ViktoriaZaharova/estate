@@ -142,6 +142,12 @@
   header {
     padding: 30px 0;
   }
+  .estate-now-gallery {
+    min-width: 1000px;
+  }
+  .estate-now-gallery__item {
+    min-width: 1000px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .phone {
@@ -304,6 +310,27 @@
   }
   .impressions .h2 {
     margin: 0 0 40px auto;
+  }
+  .menu-sidebar {
+    padding: 0 0 30px;
+  }
+  .menu-sidebar__list {
+    font-size: 20px;
+  }
+  .menu-sidebar__list li {
+    margin: 0 0 20px;
+  }
+  .menu-catalog {
+    padding: 60px 0 40px;
+  }
+  .page-menu-catalog-home .btn-group {
+    margin: 30px 0 0;
+  }
+  .page-menu-catalog-home .btn-group .btn {
+    margin: 0 20px 10px 0;
+  }
+  .page-menu-catalog-home .btn-group .btn:last-child {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -605,6 +632,15 @@
   .list-characteristics {
     font-size: 18px;
   }
+  .estate-now {
+    margin: 40px 0;
+  }
+  .estate-now-gallery {
+    margin: 30px 0 0;
+  }
+  .blockquote {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .btn {
@@ -825,6 +861,111 @@
   .photoshoot-box {
     height: 550px;
   }
+  .menu-catalog {
+    padding: 0;
+    margin: 0 0 40px;
+  }
+  .menu-sidebar {
+    padding: 20px 0;
+    margin: 0 0 20px;
+    max-width: none;
+    width: 100%;
+  }
+  .menu-sidebar__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu-sidebar__list li {
+    width: 20%;
+    margin: 0;
+  }
+  .menu-sidebar__list li:last-child {
+    margin: 0;
+  }
+  .menu-sidebar__list li a {
+    text-align: center;
+    width: 100%;
+    padding: 7px 0;
+  }
+  .menu-sidebar__list li a span {
+    margin: 4px 0 0;
+  }
+  .menu-sidebar::before {
+    height: 100%;
+    width: calc(100% + 100px);
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+  .owner {
+    margin: 0;
+  }
+  .owner__content {
+    padding: 30px 0 30px 30px;
+  }
+  .owner h2 {
+    margin: 0 0 30px;
+  }
+  .owner__photo {
+    height: auto;
+  }
+  .blockquote {
+    text-indent: 40px;
+  }
+  .blockquote:before, .blockquote:after {
+    font-size: 60px;
+  }
+  .blockquote::before {
+    left: -40px;
+    top: -40px;
+  }
+  .blockquote:after {
+    bottom: -30px;
+    right: 0;
+    left: auto;
+  }
+  .estate-now .slider-nav {
+    margin: 30px 0 0;
+  }
+  .estate-now h2 {
+    margin: 0 0 30px;
+  }
+  .estate-now-gallery {
+    min-width: auto;
+    margin: 30px 0 0;
+  }
+  .estate-now-gallery__item {
+    min-width: auto;
+    width: 100%;
+  }
+  .video-about-slider {
+    padding: 0 40px;
+  }
+  .slick-arrow-v2.slick-prev {
+    left: 0;
+  }
+  .slick-arrow-v2.slick-next {
+    right: 0;
+  }
+  .map-attractions-section {
+    padding: 60px 0 0;
+  }
+  .map-attractions-box {
+    min-width: auto;
+    height: 600px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .btn {
@@ -978,6 +1119,9 @@
   .form-callback-certificate .consent {
     max-width: none;
   }
+  .menu-sidebar__list li {
+    width: 33.33%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .home-image {
@@ -1024,7 +1168,7 @@
     max-width: none;
     margin: 10px 0 0;
   }
-  .form-callback {
+  .form-callback [type=submit] {
     max-width: none;
     width: 100%;
   }
@@ -1210,6 +1354,28 @@
   }
   .photoshoot-section {
     margin: 60px 0 50px;
+  }
+  .menu-sidebar__list li {
+    width: 50%;
+  }
+  .page-menu-catalog-home .btn {
+    width: 100%;
+  }
+  .btn-icon {
+    margin: 0 0 0 15px;
+  }
+  .map-attractions-box {
+    height: 400px;
+  }
+  .video-about__box:after {
+    width: 60px;
+    height: 60px;
+  }
+  .video-about-slider .slick-dots {
+    margin: 30px auto 0;
+  }
+  .video-box__btn {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 480px) {

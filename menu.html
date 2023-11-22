@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Усадьба на Дворянской</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="mobile-menu">
+		<div class="mobile-menu__head">
+			<a href="index.html" class="logo-menu"><img src="img/logo-menu.svg" alt=""></a>
+			<a href="#" class="mobile-menu__close"><svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg></a>
+		</div>
+		<div class="mobile-menu__body">
+			<ul class="menu my-ul">
+				<li><a href="history.html">История</a></li>
+				<li><a href="about.html">О ресторане</a></li>
+				<li><a href="menu.html">Меню</a></li>
+				<li><a href="banquets.html">Банкеты</a></li>
+				<li><a href="weddings.html">Свадьбы</a></li>
+				<li><a href="photoshoot.html">Фотосессии</a></li>
+				<li><a href="reviews.html">Отзывы</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="mobile-menu__footer">
+			<div class="schedule">
+				<p>Пн-Чт: 11:00-24:00</p>
+				<p>Пн-Вс: 11:00-02:00</p>
+			</div>
+			<a href="tel:+79023416969" class="phone">+7 902 341 69 69</a>
+			<div class="address-box">
+				<p>Пенза, ул. Красная, 69</p>
+			</div>
+			<ul class="list-messangers my-ul">
+				<li><a href="#" target="_blank"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#vk"></use>
+						</svg></a></li>
+				<li><a href="#" target="_blank"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#telegram"></use>
+						</svg></a></li>
+				<li><a href="#" target="_blank"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#whatsapp"></use>
+						</svg></a></li>
+				<li><a href="#" target="_blank"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#viber"></use>
+						</svg></a></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="header-fixed header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<a href="index.html" class="logo-header"><img src="img/logo-header.svg" alt=""></a>
+					<div class="header-fixed-block">
+						<p>Пн-чт: 11:00-24:00</p>
+						<p>Пт: 11:00-02:00</p>
+					</div>
+					<div class="header-fixed-block">
+						<p>Сб: 12:00-02:00</p>
+						<p>Вс: 12:00-24:00</p>
+					</div>
+					<div class="header-fixed-block">
+						<p>ул. Красная, 69</p>
+					</div>
+					<div class="header-fixed-block">
+						<a href="tel:+79023416969" class="header-fixed__link">+7 902 341 69 69</a>
+					</div>
+					<a href="basket.html" class="btn-basket"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#basket"></use>
+						</svg></a>
+					<ul class="mini-menu my-ul">
+						<li><a href="menu.html">меню</a></li>
+						<li><a href="delivery.html">доставка</a></li>
+						<li><a href="#" data-bs-toggle="modal" data-bs-target="#reservationModal">забронировать</a></li>
+					</ul>
+					<a href="#" class="btn-burger"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="page page-menu-catalog-home">
+		<img src="img/sale-bg.jpeg" alt="" class="page__bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumbs">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Меню</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="col-12">
+					<h1>Меню</h1>
+					<div class="box-text">
+						<p>На сайте вы можете познакомиться с меню и барной картой нашего ресторана, а также заказать доставку Яндекс.Go и
+						СберМаркет.</p>
+					</div>
+					<div class="btn-group">
+						<a href="#" download="#" target="_blank" class="btn btn-lg-md btn-accent">
+							<span>Скачать основное меню</span>
+							<span class="btn-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#download"></use>
+								</svg></span>
+						</a>
+						<a href="#" download="#" target="_blank" class="btn btn-lg-md btn-accent">
+							<span>Скачать барную карту</span>
+							<span class="btn-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#download"></use>
+							</svg></span>
+						</a>
+						<a href="delivery.html" class="btn btn-lg-md btn-border-white">
+							Заказать доставку
+						</a>
+						<a href="#" target="_blank" class="btn btn-lg-md btn-border-white">
+							<span>Яндекс. Еда</span>
+							<span class="btn-icon"><img src="img/yandex.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="menu-catalog">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="menu-sidebar">
+						<ul class="menu-sidebar__list my-ul">
+							<li><a href="#" class="active">Все</a></li>
+							<li><a href="#">Завтраки
+								<span>сб-вс 12:00-15:00</span>
+							</a></li>
+							<li><a href="#">Детское меню</a></li>
+							<li><a href="#">Закуски</a></li>
+							<li><a href="#">Салаты</a></li>
+							<li><a href="#">Супы</a></li>
+							<li><a href="#">Горячее</a></li>
+							<li><a href="#">Мангал</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Гарнир</a></li>
+							<li><a href="#">Хлеб</a></li>
+							<li><a href="#">Соусы</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-9">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/menu2.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano, оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/menu1.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/product4.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/product1.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/product2.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/product3.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/menu2.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano, оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/menu1.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-60">
+							<div class="menu-card">
+								<a href="product.html" class="menu-card__photo"><img src="img/product4.png" alt=""></a>
+								<div class="menu-card__body">
+									<a href="product.html" class="menu-card__title">Фетучини с креветками, биском в сливочном соусе</a>
+									<div class="menu-card__description">
+										<p>Креветки, обжаренные с чесноком и томатами, томим со сливками и биском. Фетучини подаем с сыром Grana
+											Padano,
+											оливковым
+											маслом и петрушкой.</p>
+									</div>
+									<div class="menu-card__price">
+										<div class="price">720 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo-footer"><img src="img/logo-footer.svg" alt=""></a>
+					<div class="footer-box">
+						<div class="schedule">
+							<p>Пн-Чт: 11:00-24:00</p>
+							<p>Пн-Вс: 11:00-02:00</p>
+						</div>
+						<a href="tel:+79023416969" class="footer-phone">+7 902 341 69 69</a>
+						<div class="address-box">
+							<p>Пенза, ул. Красная, 69</p>
+						</div>
+					</div>
+
+					<ul class="footer-menu my-ul">
+						<li><a href="history.html">История</a></li>
+						<li><a href="about.html">О ресторане</a></li>
+						<li><a href="menu.html">Меню</a></li>
+						<li><a href="banquets.html">Банкеты</a></li>
+						<li><a href="weddings.html">Свадьбы</a></li>
+						<li><a href="photoshoot.html">Фотосессии</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+
+					<ul class="list-social-footer my-ul">
+						<li><a href="#"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#whatsapp"></use>
+								</svg></a></li>
+						<li><a href="#"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#viber"></use>
+								</svg></a></li>
+						<li><a href="#"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg></a></li>
+
+						<li><a href="#"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#telegram"></use>
+								</svg></a></li>
+					</ul>
+					<div class="map-location">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?ll=45.007150%2C53.185503&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzIxMzg2MRI30KDQvtGB0YHQuNGPLCDQn9C10L3Qt9CwLCDQmtGA0LDRgdC90LDRjyDRg9C70LjRhtCwLCA2OSIKDVMHNEIV9b1UQg%2C%2C&z=16.78"
+							frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Хотите посетить наше заведение? Забронируйте место!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-reserved">
+						<div class="form-column">
+							<h3>Выберите формат</h3>
+							<label>
+								<select name="select" class="select-my">
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+									<option value="Банкет">Банкет</option>
+								</select>
+							</label>
+							<label>
+								<input type="text" placeholder="Количество гостей" name="value_guests">
+							</label>
+						</div>
+						<div class="form-column">
+							<h3>Контактные данные и дата</h3>
+							<div class="form-row-column">
+								<label>
+									<input type="text" placeholder="Имя" name="name">
+								</label>
+								<label>
+									<input type="text" placeholder="Фамилия" name="first_name">
+								</label>
+							</div>
+							<div class="form-row">
+								<label>
+									<input type="text" placeholder="Телефон" name="phone" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Укажите дату" name="date">
+								</label>
+							</div>
+						</div>
+						<div class="form-column">
+							<a href="#" class="btn btn-md btn-blue">Уточнить дату</a>
+							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-column">
+								<h4>Если вы хотите получать наши спецпредложения, заполните поля:</h4>
+							</div>
+							<div class="form-column">
+								<div class="form-row-line">
+									<label>
+										<input type="text" placeholder="Дата вашего Дня рождения" name="date">
+									</label>
+									<label>
+										<input type="text" placeholder="e-mail" name="mail">
+									</label>
+
+									<div class="tooltip-wrapper">
+										<div class="btn-tooltip">?</div>
+										<div class="tooltip-box">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo numquam odit non mollitia,
+												nobis nisi, magni eligendi sint autem eius cum sit libero tenetur et vitae ut in nostrum esse!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-footer">
+							<button type="submit" class="btn btn-md btn-accent">забронировать</button>
+							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<script src="js/wow.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script> -->
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

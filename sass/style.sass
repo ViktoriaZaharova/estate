@@ -163,6 +163,13 @@ button, .btn
 		background: $accent
 		color: #fff
 
+.btn-border-white
+	color: #fff
+	border: 1px solid #fff
+	&:hover
+		background: #fff
+		color: $accent
+
 .btn-md
 	font-size: 18px
 	height: 53px
@@ -196,6 +203,13 @@ button, .btn
 	display: inline-block
 	width: 100%
 	height: 100%
+
+.btn-icon
+	width: 20px
+	height: 20px
+	margin: 0 0 0 30px
+	fill: #fff
+	@include d-flex
 
 .btn-toggle
 	&__icon
@@ -253,6 +267,9 @@ h2, .h2
 
 .mb-42
 	margin-bottom: 42px
+
+.mb-60
+	margin-bottom: 60px
 
 .mb-80
 	margin-bottom: 80px
@@ -352,6 +369,16 @@ h2, .h2
 		order: 1
 	.slick-dots
 		margin: 0 125px
+
+.slick-arrow-v2
+	position: absolute
+	top: 50%
+	transform: translate(0,-50%)
+	&.slick-prev
+		left: -57px
+	&.slick-next
+		right: -57px
+
 
 //checkbox my
 .label-checkbox
@@ -517,7 +544,7 @@ h2, .h2
 		width: 31px
 		height: 31px
 		min-width: 31px
-		font-size: 18px			
+		font-size: 18px
 
 .btn-tooltip
 	width: 46px

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home {
   padding: 335px 0 70px;
   position: relative;
@@ -1839,4 +1840,240 @@
 
 .product-delivery p {
   margin: 0 0 20px;
+}
+
+.page-menu-catalog-home {
+  margin: 0;
+}
+.page-menu-catalog-home .btn-group {
+  margin: 70px 0 0;
+}
+
+.menu-catalog {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.menu-sidebar {
+  position: relative;
+  padding: 0 0 77px 0;
+  z-index: 1;
+  max-width: 265px;
+}
+.menu-sidebar::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: calc(100% + 1000px);
+  width: 2000px;
+  background: #97B6B4;
+  z-index: -1;
+}
+.menu-sidebar__list {
+  font-size: 24px;
+}
+.menu-sidebar__list li {
+  margin: 0 0 31px;
+}
+.menu-sidebar__list li:last-child {
+  margin: 0;
+}
+.menu-sidebar__list a {
+  color: #000;
+}
+.menu-sidebar__list a:hover {
+  color: #fff;
+}
+.menu-sidebar__list a.active {
+  font-weight: bold;
+}
+.menu-sidebar__list a span {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+}
+
+.owner {
+  margin: -145px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.owner h2 {
+  margin: 0 0 47px;
+  max-width: 730px;
+}
+.owner__content {
+  position: relative;
+  padding: 149px 0 160px 96px;
+}
+.owner__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  min-width: 2000px;
+  background: #97B6B4;
+  z-index: -1;
+}
+.owner__photo {
+  width: 100%;
+  height: 832px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.owner__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blockquote {
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.blockquote::before, .blockquote::after {
+  content: "";
+  font-size: 128px;
+  font-weight: 300;
+  position: absolute;
+}
+.blockquote::before {
+  content: "«";
+  top: -50px;
+  left: -128px;
+}
+.blockquote:after {
+  content: "»";
+  bottom: -121px;
+  left: 226px;
+}
+
+.map-attractions-section {
+  position: relative;
+  z-index: 1;
+  padding: 94px 0 0;
+  overflow: hidden;
+  margin: 0 0 92px;
+}
+.map-attractions-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 337px);
+  background: #D6ADA0;
+  left: 0;
+  top: 0;
+}
+
+.estate-now {
+  margin: 0 0 120px;
+}
+.estate-now h2 {
+  margin: 0 0 45px;
+}
+.estate-now .slider-nav {
+  margin: 45px 0 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 345px;
+}
+.estate-now .slick-dots {
+  margin: 0 auto;
+}
+
+.estate-now-gallery {
+  min-width: 1187px;
+}
+.estate-now-gallery__item {
+  min-width: 1187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map-attractions-box {
+  min-width: 1690px;
+  width: 100%;
+  height: 820px;
+}
+.map-attractions-box iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-about-slider .slick-list {
+  margin: 0 -15px;
+}
+.video-about-slider .slick-slide {
+  padding: 0 15px;
+}
+.video-about-slider .slick-dots {
+  margin: 62px auto 0;
+}
+
+.video-about__box {
+  width: 100%;
+  height: 336px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.video-about__box::before, .video-about__box::after {
+  content: "";
+  position: absolute;
+}
+.video-about__box::before {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  left: 0;
+  top: 0;
+}
+.video-about__box:after {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 94px;
+  height: 94px;
+  background: url("../img/play.svg") no-repeat center;
+  background-size: 100%;
+}
+.video-about__box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

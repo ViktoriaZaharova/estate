@@ -59,6 +59,48 @@ $('.menu-slider').slick({
 	]
 });
 
+$('.video-about-slider').slick({
+	slidesToShow: 3,
+	arrows: true,
+	dots: true,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.estate-now-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: true,
+	dots: true,
+	asNavFor: '.estate-now-gallery',
+	appendDots: '.estate-now-slider__nav',
+	appendArrows: '.estate-now-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+$('.estate-now-gallery').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	swipe: false,
+	asNavFor: '.estate-now-slider',
+});
+
 $('.down').on("click", function () {
 	let $input = $(this).parent().find('input');
 	let count = parseInt($input.val()) - 1;
