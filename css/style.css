@@ -818,6 +818,8 @@ h2, .h2 {
   font-size: 14px;
   color: #000;
   z-index: 3;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   display: none;
 }
 

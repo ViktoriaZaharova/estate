@@ -93,6 +93,19 @@
 		width: calc(100% - 488px)
 		padding: 0 0 0 20px
 
+	.advantages-company-box
+		font-size: 18px
+		&__img
+			width: 250px
+			height: 250px
+		&__body
+			padding: 0 20px
+			width: calc(100% - 250px)
+		h3
+			margin: 0 0 20px
+		.box-text
+			font-size: 18px			
+
 @media only screen and (max-width: 1600px)
 	header
 		.container
@@ -316,6 +329,10 @@
 			margin: 0 20px 10px 0
 			&:last-child
 				margin: 0
+
+	.advantages-company__content
+		&::before
+			right: -20px			
 
 @media only screen and (max-width: 1200px)
 	header
@@ -605,7 +622,40 @@
 		margin: 30px 0 0
 
 	.blockquote
-		font-size: 18px			
+		font-size: 18px
+
+	.form-reserved-v2
+		.form-column
+			&:nth-child(2)
+				width: calc(100% - 342px)
+				padding-right: 0
+				border-right: none
+			&:last-child
+				max-width: 100%
+				width: 100%
+				padding: 20px 0 0
+				margin: 20px 0 0
+				border: none
+				border-top: 1px solid #97B6B4
+				align-items: center
+				justify-content: center
+			.consent
+				margin: 0 0 0 20px
+		.form-row-line
+			width: calc(100% - 46px)
+			padding: 0 20px 0 0
+		.special-proposition
+			max-width: none
+			margin: 0 0 20px
+
+	.free-dates
+		margin: 60px 0
+
+	.advantages-text
+		padding: 30px 0 30px 30px
+
+	.advantages-company__content
+		padding: 30px 0	
 
 @media only screen and (max-width: 992px)
 	.btn
@@ -863,9 +913,9 @@
 
 	.estate-now
 		.slider-nav
-			margin: 30px 0 0 
+			margin: 30px 0 0
 		h2
-			margin: 0 0 30px	
+			margin: 0 0 30px
 
 	.estate-now-gallery
 		min-width: auto
@@ -874,14 +924,14 @@
 			min-width: auto
 			width: 100%
 
-	.video-about-slider 
+	.video-about-slider
 		padding: 0 40px
 
 	.slick-arrow-v2
 		&.slick-prev
 			left: 0
 		&.slick-next
-			right: 0	
+			right: 0
 
 	.map-attractions-section
 		padding: 60px 0 0
@@ -889,7 +939,19 @@
 	.map-attractions-box
 		min-width: auto
 		height: 600px
-		width: 100%						
+		width: 100%
+
+	.form-reserved-v2
+		.form-column
+			&:nth-child(2)
+				padding: 0
+				width: 100%
+			&:last-child
+				padding: 20px 0 0
+				margin: 0
+		.form-row-line
+			width: calc(100% - 46px)
+			padding: 0 10px 0 0		
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -1067,12 +1129,12 @@
 
 	.consent
 		max-width: none
-		margin: 10px 0 0 
+		margin: 10px 0 0
 
 	.form-callback
 		[type="submit"] 
-			max-width: none
-			width: 100%
+		max-width: none
+		width: 100%
 		.form-text
 			margin: 0 0 20px
 			font-size: 14px
@@ -1264,7 +1326,28 @@
 		margin: 30px auto 0
 
 	.video-box__btn
-		font-size: 16px				
+		font-size: 16px
+
+	.form-reserved-v2 
+		.form-column
+			&:nth-child(2)
+				margin: 0
+			.consent
+				margin: 10px auto 0
+			.btn
+				width: 100%	
+		.form-row
+			margin: 20px 0 0
+			align-items: flex-start
+		.form-footer
+			margin: 0			
+
+	.advantages-company-box
+		&__img
+			width: 200px
+			height: 200px
+		&__body
+			width: calc(100% - 200px)
 
 @media only screen and (max-width: 480px)
 	.home
@@ -1305,6 +1388,13 @@
 			.btn
 				width: 100%
 				margin: 0 0 10px
+
+	.advantages-company-box
+		&__img
+			width: 100%
+		&__body
+			width: 100%
+			padding: 20px 0 0			
 
 @media only screen and (max-width: 420px)
 	h1, .h1
