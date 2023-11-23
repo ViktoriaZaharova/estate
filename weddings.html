@@ -518,9 +518,8 @@
 	</footer>
 
 	<!-- Модальное окно -->
-	<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog">
+	<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">Хотите посетить наше заведение? Забронируйте место!</div>
@@ -529,76 +528,199 @@
 						</svg></button>
 				</div>
 				<div class="modal-body">
-					<form method="post" class="form-reserved">
-						<div class="form-column">
-							<h3>Выберите формат</h3>
-							<label>
-								<select name="select" class="select-my">
-									<option value="Банкет">Банкет</option>
-									<option value="Банкет">Банкет</option>
-									<option value="Банкет">Банкет</option>
-									<option value="Банкет">Банкет</option>
-								</select>
-							</label>
-							<label>
-								<input type="text" placeholder="Количество гостей" name="value_guests">
-							</label>
-						</div>
-						<div class="form-column">
-							<h3>Контактные данные и дата</h3>
-							<div class="form-row-column">
+					<form method="post" class="form-reserved form-reserved-v2 form-reserved-black">
+						<div class="form-body">
+							<div class="form-column">
+								<h4>Выберите формат</h4>
 								<label>
-									<input type="text" placeholder="Имя" name="name">
+									<select name="select" class="select-my select-my-white">
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+									</select>
 								</label>
 								<label>
-									<input type="text" placeholder="Фамилия" name="first_name">
+									<input type="text" placeholder="Количество гостей" name="value_guests">
 								</label>
 							</div>
-							<div class="form-row">
-								<label>
-									<input type="text" placeholder="Телефон" name="phone" required>
-								</label>
-								<label>
-									<input type="text" placeholder="Укажите дату" name="date">
-								</label>
+							<div class="form-column">
+								<h4>Контактные данные и дата</h4>
+								<div class="form-row-column">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+									<label>
+										<input type="text" placeholder="Фамилия" name="first_name">
+									</label>
+								</div>
+								<div class="form-row-column">
+									<label>
+										<input type="text" placeholder="Телефон" name="phone" required>
+									</label>
+									<label>
+										<input type="text" placeholder="Укажите дату" name="date">
+									</label>
+								</div>
+							</div>
+							<div class="form-column">
+								<a href="#" class="btn btn-lg-md btn-blue">Уточнить дату</a>
+								<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
 							</div>
 						</div>
-						<div class="form-column">
-							<a href="#" class="btn btn-md btn-blue">Уточнить дату</a>
-							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
-						</div>
-
+	
 						<div class="form-row">
-							<div class="form-column">
-								<h4>Если вы хотите получать наши спецпредложения, заполните поля:</h4>
+							<div class="special-proposition">
+								<p>Если вы хотите получать наши спецпредложения, заполните поля:</p>
+	
 							</div>
-							<div class="form-column">
-								<div class="form-row-line">
-									<label>
-										<input type="text" placeholder="Дата вашего Дня рождения" name="date">
-									</label>
-									<label>
-										<input type="text" placeholder="e-mail" name="mail">
-									</label>
-
-									<div class="tooltip-wrapper">
-										<div class="btn-tooltip">?</div>
-										<div class="tooltip-box">
-											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo numquam odit non mollitia,
-												nobis nisi, magni eligendi sint autem eius cum sit libero tenetur et vitae ut in nostrum esse!
-											</p>
-										</div>
-									</div>
+							<div class="form-row-line">
+								<label>
+									<input type="text" placeholder="Дата вашего Дня рождения" name="date">
+								</label>
+								<label>
+									<input type="text" placeholder="e-mail" name="mail">
+								</label>
+							</div>
+							<div class="tooltip-wrapper">
+								<div class="btn-tooltip">?</div>
+								<div class="tooltip-box">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
 								</div>
 							</div>
 						</div>
-
+	
 						<div class="form-footer">
 							<button type="submit" class="btn btn-md btn-accent">забронировать</button>
 							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
 						</div>
 					</form>
 				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+	
+					<div class="modal-halls">
+						<div class="modal-halls-slider">
+							<div class="slide">
+								<div class="modal-halls-slider__item"><img src="img/halls1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="modal-halls-slider__item"><img src="img/halls2.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="modal-halls-slider__item"><img src="img/halls1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="modal-halls-slider__item"><img src="img/halls1.png" alt=""></div>
+							</div>
+						</div>
+						<div class="modal-halls__content">
+							<div class="modal-title">Основные залы для гостей</div>
+							<div class="box-text">
+								<p>Основные залы для гостей сохраняют интерьер прошлого в современной обработке. Уютные помещения с
+									деревянной мебелью и
+									изящным декором никого не оставят равнодушными. Вы можете заказать понравившийся вам столик или
+									арендовать зал для
+									вашего мероприятия.</p>
+							</div>
+						</div>
+					</div>
+	
+					<form method="post" class="form-reserved form-reserved-v2 form-reserved-black">
+						<h3 class="form-reserved__title">Хотите посетить наше заведение? Забронируйте место!</h3>
+						<div class="form-body">
+							<div class="form-column">
+								<h4>Выберите формат</h4>
+								<label>
+									<select name="select" class="select-my select-my-white">
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+										<option value="Банкет">Банкет</option>
+									</select>
+								</label>
+								<label>
+									<input type="text" placeholder="Количество гостей" name="value_guests">
+								</label>
+							</div>
+							<div class="form-column">
+								<h4>Контактные данные и дата</h4>
+								<div class="form-row-column">
+									<label>
+										<input type="text" placeholder="Имя" name="name">
+									</label>
+									<label>
+										<input type="text" placeholder="Фамилия" name="first_name">
+									</label>
+								</div>
+								<div class="form-row-column">
+									<label>
+										<input type="text" placeholder="Телефон" name="phone" required>
+									</label>
+									<label>
+										<input type="text" placeholder="Укажите дату" name="date">
+									</label>
+								</div>
+							</div>
+							<div class="form-column">
+								<a href="#" class="btn btn-lg-md btn-blue">Уточнить дату</a>
+								<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+							</div>
+						</div>
+	
+						<div class="form-row">
+							<div class="special-proposition">
+								<p>Если вы хотите получать наши спецпредложения, заполните поля:</p>
+	
+							</div>
+							<div class="form-row-line">
+								<label>
+									<input type="text" placeholder="Дата вашего Дня рождения" name="date">
+								</label>
+								<label>
+									<input type="text" placeholder="e-mail" name="mail">
+								</label>
+							</div>
+							<div class="tooltip-wrapper">
+								<div class="btn-tooltip">?</div>
+								<div class="tooltip-box">
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="form-footer">
+							<button type="submit" class="btn btn-md btn-accent">забронировать</button>
+							<div class="consent">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">администратор свяжется в течении 30 минут</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+					<a href="#" data-bs-dismiss="modal" class="btn btn-md btn-close-modal btn-accent-light">хорошо</a>
+				</div>
+	
 			</div>
 		</div>
 	</div>
