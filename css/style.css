@@ -735,15 +735,15 @@ h2, .h2 {
   width: calc(50% - 7.5px);
 }
 
+.select-my-white {
+  background: url("../img/arrow-select-white.svg") no-repeat calc(100% - 20px) center;
+}
+
 .select-my {
   background: url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center;
   background-size: 23px;
   padding: 0 44px 0 26px;
   height: 60px;
-}
-
-.select-my-white {
-  background: url("../img/arrow-select-white.svg") no-repeat calc(100% - 20px) center;
 }
 
 .form-row {

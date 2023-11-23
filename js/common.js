@@ -173,6 +173,24 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
 setProgress(0);
 
+$('.modal-halls-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	dots: true,
+	arrows: true,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+// const myModalEl = document.getElementById('myModal')
+// myModalEl.addEventListener('hidden.bs.modal', event => {
+	
+// })
+
+$('.modal').on('shown.bs.modal', function () {
+	$('.modal-halls-slider').slick('setPosition');
+});
+
 $('.down').on("click", function () {
 	let $input = $(this).parent().find('input');
 	let count = parseInt($input.val()) - 1;

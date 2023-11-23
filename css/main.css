@@ -303,6 +303,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.callback-box .form-callback .form-footer {
+  margin: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .callback-box .form-text {
   margin: 0 0 30px;
   font-weight: 300;
@@ -1480,6 +1486,13 @@
 }
 .form-reserved .form-body {
   margin: 0 0 46px;
+}
+.form-reserved__title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .form-body {

@@ -185,7 +185,7 @@
   .container {
     max-width: 1100px;
   }
-  .h2, h2 {
+  h2, .h2, .modal-title {
     font-size: 40px;
   }
   .kitchen-image {
@@ -367,6 +367,16 @@
   .history-slider .slide {
     margin: 0 70px 0 0;
   }
+  .modal-content {
+    padding: 40px 60px;
+  }
+  .modal-header .btn-close {
+    top: 20px;
+    right: 20px;
+  }
+  .modal-body {
+    margin: 40px 0 0;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header {
@@ -411,7 +421,7 @@
   .mb-40 {
     margin-bottom: 30px;
   }
-  .h2, h2 {
+  .h2, h2, .modal-title {
     font-size: 30px;
   }
   .title-text {
@@ -737,6 +747,21 @@
   }
   .history-photo__img {
     height: 760px;
+  }
+  .modal-halls__content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0 0 20px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #callbackModal .modal-title {
+    max-width: none;
+  }
+  .modal-halls-slider {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1340,7 +1365,7 @@
   h1, .h1 {
     font-size: 30px;
   }
-  .h2, h2 {
+  h2, .h2, .modal-title {
     font-size: 24px;
   }
   input, textarea, select {
@@ -1585,6 +1610,9 @@
   .advantages-company-box__body {
     width: calc(100% - 200px);
   }
+  .modal-content {
+    padding: 40px 30px 30px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .home .schedule-box {
@@ -1634,6 +1662,22 @@
   .advantages-company-box__body {
     width: 100%;
     padding: 20px 0 0;
+  }
+  .modal-halls-slider__item {
+    height: 300px;
+  }
+  .modal-halls-slider .slick-arrow.slick-prev {
+    left: 10px;
+  }
+  .modal-halls-slider .slick-arrow.slick-next {
+    right: 10px;
+  }
+  .form-reserved__title {
+    margin: 0 auto 30px;
+    font-size: 20px;
+  }
+  #callbackModal .form-reserved {
+    margin: 30px 0 0;
   }
 }
 @media only screen and (max-width: 420px) {
