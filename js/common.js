@@ -111,6 +111,68 @@ $('.gallery-celebrations-slider').slick({
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 });
 
+$('.history-info-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: true,
+	dots: true,
+	asNavFor: '.history-photo-slider',
+	appendDots: '.history-slider__nav',
+	appendArrows: '.history-slider__nav',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+$('.history-photo-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false,
+	swipe: false,
+	asNavFor: '.history-slider',
+});
+
+//progressbar
+$('.history-slider').slick({
+	slidesToShow: 1,
+	arrows: false,
+	variableWidth: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+function setProgress(index) {
+	const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+
+	$progressBar
+		.css('width', calc + '%')
+		.attr('aria-valuenow', calc);
+}
+
+const $slider = $('.history-slider');
+const $progressBar = $('.history-slider__progress .progress-bg');
+
+$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+	setProgress(nextSlide);
+});
+
+setProgress(0);
+
 $('.down').on("click", function () {
 	let $input = $(this).parent().find('input');
 	let count = parseInt($input.val()) - 1;

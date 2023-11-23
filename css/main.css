@@ -2327,3 +2327,132 @@
      object-fit: cover;
   border-radius: 5px;
 }
+
+.page-history-home {
+  background: #fff;
+  padding: 0;
+  min-height: auto;
+  margin: 0;
+  color: #000;
+}
+.page-history-home__content {
+  padding: 92px 0 30px 96px;
+}
+.page-history-home__content .box-text {
+  max-width: 473px;
+}
+.page-history-home h1 {
+  margin: 0 0 28px;
+}
+.page-history-home .slick-dots {
+  margin: 0 auto;
+}
+
+.history-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.history-photo-slider {
+  min-width: 1061px;
+}
+
+.history-photo__img {
+  min-width: 1061px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.history-photo__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-link-page {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  padding: 37px 103px;
+  height: 112px;
+  border-radius: 0;
+}
+
+.history-section {
+  padding: 96px 0 102px;
+  background: #FFF1EC;
+  margin: 0 0 100px;
+}
+
+.history-slider {
+  width: calc(100% + 500px);
+}
+.history-slider .slide {
+  margin: 0 144px 0 0;
+}
+
+.history-slider-item {
+  max-width: 359px;
+  width: 100%;
+}
+.history-slider-item__photo {
+  width: 348px;
+  height: 312px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+.history-slider-item__photo img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.history-slider-item__body {
+  padding: 38px 0 0;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 19px;
+  margin: 89px 0 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #F2D3C8;
+}
+
+.progress-bg {
+  background: #D6AE9F;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}

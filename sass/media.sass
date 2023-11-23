@@ -136,14 +136,15 @@
 	.title-text
 		font-size: 70px
 
-	// .kitchen-title-text
-	// 	bottom: 80%
 
 	.programm-title-text
 		font-size: 100px
 
 	.map-location
 		width: 400px
+
+	.slider-nav
+		margin: 50px auto 0	
 
 @media only screen and (max-width: 1460px)
 	.logo
@@ -333,6 +334,19 @@
 	.advantages-company__content
 		&::before
 			right: -20px
+
+	.page-history-home
+		&__content
+			padding: 50px 0 30px 50px
+			.box-text
+				max-width: none
+		h1
+			margin: 0 0 30px
+
+	.history-slider .slide
+		margin: 0 70px 0 0
+		
+						
 
 @media only screen and (max-width: 1200px)
 	header
@@ -672,6 +686,13 @@
 	.advantages-company-box-column .advantages-company-box__body
 		padding: 20px 0 0
 
+	.btn-link-page
+		padding: 20px 60px
+		font-size: 18px
+
+	.history-photo__img
+		height: 760px	
+
 @media only screen and (max-width: 992px)
 	.btn
 		padding: 12px 30px
@@ -977,17 +998,63 @@
 				max-width: none
 		&__img
 			margin: 0 0 30px
-			min-width: auto		
+			min-width: auto
 		h2
 			margin: 0 0 20px
 			width: 100%
-			max-width: none	
+			max-width: none
 
 	.hall-rental
 		&__content
 			&::before
 				right: auto
-				left: -20px		
+				left: -20px
+
+	.page-history-home
+		padding: 30px 0
+		&__content			
+			padding: 0
+			margin: 0 0 20px
+		&__img
+			min-width: auto
+			height: auto
+			
+	.history-photo-slider
+		min-width: auto
+
+	.history-photo__img
+		height: auto
+		min-width: auto
+
+	.btn-link-page
+		position: relative
+		margin: 0 auto 0
+		width: 100%	
+		
+	.history-section
+		margin: 0 0 60px
+		padding: 60px 0
+
+	.progress
+		margin: 40px 0 0
+		height: 16px
+
+	.history-slider
+		width: 100% 
+		.slick-list
+			margin: 0 -10px
+		.slide		
+			margin: 0
+			padding: 0 10px				
+
+	.history-slider-item
+		max-width: none
+		width: 100%
+		&__photo
+			max-width: none
+			width: 100%
+		&__body
+			padding: 20px 0 0
 
 @media only screen and (max-width: 768px)
 	.btn

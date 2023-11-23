@@ -288,6 +288,12 @@ button:hover, button:focus, .btn:hover, .btn:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.btn-icon-arrow {
+  fill: none;
+  stroke: #fff;
+  height: 38px;
+  width: 19px;
+}
 
 .btn-toggle__icon {
   width: 24px;
