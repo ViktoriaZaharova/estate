@@ -686,36 +686,6 @@
   .blockquote {
     font-size: 18px;
   }
-  .form-reserved-v2 .form-column:nth-child(2) {
-    width: calc(100% - 342px);
-    padding-right: 0;
-    border-right: none;
-  }
-  .form-reserved-v2 .form-column:last-child {
-    max-width: 100%;
-    width: 100%;
-    padding: 20px 0 0;
-    margin: 20px 0 0;
-    border: none;
-    border-top: 1px solid #97B6B4;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .form-reserved-v2 .form-column .consent {
-    margin: 0 0 0 20px;
-  }
-  .form-reserved-v2 .form-row-line {
-    width: calc(100% - 46px);
-    padding: 0 20px 0 0;
-  }
-  .form-reserved-v2 .special-proposition {
-    max-width: none;
-    margin: 0 0 20px;
-  }
   .free-dates {
     margin: 60px 0;
   }
@@ -1088,23 +1058,14 @@
     height: 600px;
     width: 100%;
   }
-  .form-reserved-v2 .form-column:nth-child(2) {
-    padding: 0;
-    width: 100%;
-  }
-  .form-reserved-v2 .form-column:last-child {
-    padding: 20px 0 0;
-    margin: 0;
-  }
-  .form-reserved-v2 .form-row-line {
-    width: calc(100% - 46px);
-    padding: 0 10px 0 0;
+  .wedding-key {
+    background: #97B6B4;
   }
   .wedding-key__content, .hall-rental__content {
     padding: 20px 0;
   }
   .wedding-key__content::before, .hall-rental__content::before {
-    right: -20px;
+    display: none;
   }
   .wedding-key__content .box-text, .hall-rental__content .box-text {
     max-width: none;
@@ -1117,6 +1078,9 @@
     margin: 0 0 20px;
     width: 100%;
     max-width: none;
+  }
+  .hall-rental {
+    background: #D6AE9F;
   }
   .hall-rental__content::before {
     right: auto;
@@ -1584,24 +1548,6 @@
   }
   .video-box__btn {
     font-size: 16px;
-  }
-  .form-reserved-v2 .form-column:nth-child(2) {
-    margin: 0;
-  }
-  .form-reserved-v2 .form-column .consent {
-    margin: 10px auto 0;
-  }
-  .form-reserved-v2 .form-column .btn {
-    width: 100%;
-  }
-  .form-reserved-v2 .form-row {
-    margin: 20px 0 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .form-reserved-v2 .form-footer {
-    margin: 0;
   }
   .advantages-company-box__img {
     width: 200px;

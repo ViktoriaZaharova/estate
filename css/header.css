@@ -111,7 +111,6 @@ header .container {
           align-items: center;
   margin: 0 0 0 auto;
   position: relative;
-  z-index: 1;
   padding: 0 59px 0 42px;
 }
 .mini-menu::before {

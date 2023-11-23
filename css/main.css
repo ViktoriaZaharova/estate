@@ -880,14 +880,25 @@
   margin: 0 60px 60px 0;
   max-width: 665px;
   width: 100%;
+  display: none;
+}
+.reviews-wrapper .reviews-card:nth-child(-n+6) {
+  display: block;
 }
 
-.btn-toggle-reviews {
+.btn-toggle-reviews, .btn-toggle-events {
   margin: 27px auto 0;
 }
 
 .events-wrapper-section {
   padding: 72px 0 88px;
+}
+
+.events-card-col {
+  display: none;
+}
+.events-card-col:nth-child(-n+4) {
+  display: block;
 }
 
 .events-card-row {
@@ -1328,6 +1339,14 @@
 .basket-total h3 {
   margin: 0 0 44px;
   font-weight: 400;
+}
+.basket-total .form-row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.basket-total .special-proposition {
+  width: 100%;
 }
 
 .form-basket .form-column {
@@ -2142,21 +2161,6 @@
   margin: 0 0 0 20px;
   text-align: left;
 }
-.form-reserved-v2 .form-column:nth-child(2) {
-  width: calc(100% - 342px - 222px);
-}
-.form-reserved-v2 .form-column:last-child {
-  max-width: 222px;
-  padding-top: 63px;
-}
-.form-reserved-v2 .form-column .consent {
-  color: #97B6B4;
-  margin: 30px 0 0;
-}
-.form-reserved-v2 .form-row-line {
-  width: calc(100% - 342px - 222px);
-  padding: 0 37px;
-}
 
 .advantages-text {
   position: relative;
@@ -2230,10 +2234,6 @@
 .advantages-company-box__body {
   width: calc(100% - 355px);
   padding: 0 30px 0 32px;
-}
-
-.page-weddings-home {
-  margin: 0;
 }
 
 .wedding-key h2 {
@@ -2345,7 +2345,6 @@
   background: #fff;
   padding: 0;
   min-height: auto;
-  margin: 0;
   color: #000;
 }
 .page-history-home__content {

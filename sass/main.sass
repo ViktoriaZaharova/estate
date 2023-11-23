@@ -601,13 +601,21 @@
 		margin: 0 60px 60px 0
 		max-width: 665px
 		width: 100%
+		display: none
+		&:nth-child(-n+6)
+			display: block
 
-.btn-toggle-reviews
+.btn-toggle-reviews, .btn-toggle-events
 	margin: 27px auto 0
 
 // events page
 .events-wrapper-section
 	padding: 72px 0 88px
+
+.events-card-col
+	display: none
+	&:nth-child(-n+4)
+		display: block
 
 .events-card-row
 	height: auto
@@ -886,6 +894,10 @@
 	h3
 		margin: 0 0 44px
 		font-weight: 400
+	.form-row
+		align-items: flex-start
+	.special-proposition
+		width: 100%		
 
 .form-basket
 	.form-column
@@ -1429,18 +1441,18 @@
 		color: $accent
 		margin: 0 0 0 20px
 		text-align: left
-	.form-column
-		&:nth-child(2)
-			width: calc(100% - 342px - 222px)
-		&:last-child
-			max-width: 222px
-			padding-top: 63px
-		.consent
-			color: $blue
-			margin: 30px 0 0
-	.form-row-line
-		width: calc(100% - 342px - 222px)
-		padding: 0 37px
+	// .form-column
+	// 	&:nth-child(2)
+	// 		width: calc(100% - 342px - 222px)
+	// 	&:last-child
+	// 		max-width: 222px
+	// 		padding-top: 63px
+	// 	.consent
+	// 		color: $blue
+	// 		margin: 30px 0 0
+	// .form-row-line
+	// 	width: calc(100% - 342px - 222px)
+	// 	padding: 0 37px
 
 // advantages-company
 .advantages-text
@@ -1496,9 +1508,6 @@
 		padding: 0 30px 0 32px
 
 // weddings page
-.page-weddings-home
-	margin: 0
-
 .wedding-key
 	h2
 		margin: 0 0 47px
@@ -1575,7 +1584,6 @@
 	background: #fff
 	padding: 0
 	min-height: auto
-	margin: 0
 	color: #000
 	&__content
 		padding: 92px 0 30px 96px
