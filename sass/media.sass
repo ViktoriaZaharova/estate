@@ -104,7 +104,7 @@
 		h3
 			margin: 0 0 20px
 		.box-text
-			font-size: 18px			
+			font-size: 18px
 
 @media only screen and (max-width: 1600px)
 	header
@@ -332,7 +332,7 @@
 
 	.advantages-company__content
 		&::before
-			right: -20px			
+			right: -20px
 
 @media only screen and (max-width: 1200px)
 	header
@@ -655,7 +655,22 @@
 		padding: 30px 0 30px 30px
 
 	.advantages-company__content
-		padding: 30px 0	
+		padding: 30px 0
+
+	.wedding-key, .hall-rental
+		h2
+			margin: 0 0 30px
+		&__content
+			padding: 80px 40px
+		&__img
+			margin: 50px 0
+			height: auto
+
+	.hall-rental
+		margin: 60px 0 40px
+
+	.advantages-company-box-column .advantages-company-box__body
+		padding: 20px 0 0
 
 @media only screen and (max-width: 992px)
 	.btn
@@ -951,7 +966,28 @@
 				margin: 0
 		.form-row-line
 			width: calc(100% - 46px)
-			padding: 0 10px 0 0		
+			padding: 0 10px 0 0
+
+	.wedding-key, .hall-rental
+		&__content
+			padding: 20px 0
+			&::before
+				right: -20px
+			.box-text
+				max-width: none
+		&__img
+			margin: 0 0 30px
+			min-width: auto		
+		h2
+			margin: 0 0 20px
+			width: 100%
+			max-width: none	
+
+	.hall-rental
+		&__content
+			&::before
+				right: auto
+				left: -20px		
 
 @media only screen and (max-width: 768px)
 	.btn
@@ -1328,19 +1364,19 @@
 	.video-box__btn
 		font-size: 16px
 
-	.form-reserved-v2 
+	.form-reserved-v2
 		.form-column
 			&:nth-child(2)
 				margin: 0
 			.consent
 				margin: 10px auto 0
 			.btn
-				width: 100%	
+				width: 100%
 		.form-row
 			margin: 20px 0 0
 			align-items: flex-start
 		.form-footer
-			margin: 0			
+			margin: 0
 
 	.advantages-company-box
 		&__img
@@ -1394,7 +1430,7 @@
 			width: 100%
 		&__body
 			width: 100%
-			padding: 20px 0 0			
+			padding: 20px 0 0
 
 @media only screen and (max-width: 420px)
 	h1, .h1

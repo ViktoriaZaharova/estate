@@ -969,6 +969,7 @@
      object-fit: cover;
 }
 .video-box__btn {
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -982,6 +983,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 24px;
   font-weight: bold;
 }
@@ -1842,9 +1846,6 @@
   margin: 0 0 20px;
 }
 
-.page-menu-catalog-home {
-  margin: 0;
-}
 .page-menu-catalog-home .btn-group {
   margin: 70px 0 0;
 }
@@ -2089,9 +2090,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
 }
 .gallery-celebrations__item img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .free-dates {
@@ -2214,4 +2217,113 @@
 .advantages-company-box__body {
   width: calc(100% - 355px);
   padding: 0 30px 0 32px;
+}
+
+.page-weddings-home {
+  margin: 0;
+}
+
+.wedding-key h2 {
+  margin: 0 0 47px;
+  max-width: 377px;
+}
+.wedding-key__content {
+  position: relative;
+  padding: 169px 0 90px;
+}
+.wedding-key__content .box-text {
+  max-width: 503px;
+}
+.wedding-key__content::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2000px;
+  height: 939px;
+  background: #97B6B4;
+  z-index: -1;
+}
+.wedding-key__img {
+  min-width: 854px;
+  height: 654px;
+  float: right;
+  margin: 79px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wedding-key__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.advantages-company-box-column {
+  max-width: 378px;
+  width: 100%;
+}
+.advantages-company-box-column .advantages-company-box__img {
+  width: 100%;
+  height: 277px;
+}
+.advantages-company-box-column .advantages-company-box__body {
+  padding: 30px 0 0;
+  width: 100%;
+}
+.advantages-company-box-column .box-text {
+  max-width: 316px;
+}
+
+.hall-rental {
+  margin: 84px 0 128px;
+}
+.hall-rental h2 {
+  margin: 0 0 46px;
+}
+.hall-rental__content {
+  position: relative;
+  padding: 169px 0 100px 222px;
+}
+.hall-rental__content .box-text {
+  max-width: 503px;
+}
+.hall-rental__content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #D6AE9F;
+  width: 2000px;
+  height: 939px;
+  left: 0;
+  top: 0;
+}
+.hall-rental__img {
+  border-radius: 5px;
+  min-width: 854px;
+  height: 654px;
+  margin: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hall-rental__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
