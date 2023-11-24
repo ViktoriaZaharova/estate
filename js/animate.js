@@ -1,5 +1,16 @@
 // animation
 // gsap.registerPlugin(ScrollTrigger) 
+gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: ".home",
+			start: "top",
+			end: "bottom",
+			scrub: 1
+		}
+	})
+	.to(".home-image", { scale: 1.5, right: 0, }, 0)
+
 let mm = gsap.matchMedia();
 
 mm.add("(min-width: 992px)", () => {
@@ -13,7 +24,6 @@ mm.add("(min-width: 992px)", () => {
 			}
 		})
 		.fromTo(".logo-animation img", { y: 0 }, { y: -200 }, 0)
-		.to(".home-image", { scale: 1.5, right: 0, }, 0)
 		.fromTo(".home-footer", { y: 0, opacity: 1 }, { y: 150, opacity: 0 }, 0);
 
 

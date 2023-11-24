@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -26,6 +26,17 @@
 </head>
 
 <body>
+
+	<div class="preloader">
+		<div class="preloader-icon">
+			<div class="animate-icon1"><img src="img/bird.svg" alt=""></div>
+			<div class="animate-icon2"><img src="img/round.svg" alt=""></div>
+			<div class="animate-icon2-1"><img src="img/w_top.svg" alt=""></div>
+			<div class="animate-icon2-2"><img src="img/w_down.svg" alt=""></div>
+			<div class="animate-icon3"><img src="img/txt_1.svg" alt=""></div>
+			<div class="animate-icon4"><img src="img/txt_2.svg" alt=""></div>
+		</div>
+	</div>
 
 	<div class="mobile-menu">
 		<div class="mobile-menu__head">
@@ -172,10 +183,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
-					<h2>О ресторане</h2>
+					<h2 class="wow animate__animated animate__fadeInLeft">О ресторане</h2>
 				</div>
 				<div class="col-12 col-lg-5">
-					<div class="box-text mb-40">
+					<div class="box-text mb-40 wow animate__animated animate__fadeInLeft">
 						<p>«Усадьба на Дворянской»– это место, где искусство вкуса сочетается с уютной атмосферой и богатой
 							историей. Наш ресторан
 							приглашает вас на уникальное кулинарное путешествие, восхищая вас богатством вкусов и ароматов.</p>
@@ -200,7 +211,7 @@
 					<div class="col-12 col-lg-4">
 						<div class="kitchen-content">
 							<h2>Кухня</h2>
-							<div class="box-text wow animate__animated animate__fadeInLeft animate__delay-2s">
+							<div class="box-text wow animate__animated animate__fadeInLeft">
 								<p>Мы гордимся нашим разнообразным меню, вдохновленным классическими рецептами мировой кухни и сезонными
 									продуктами. Наши
 									шеф-повара уделяют особое внимание каждой детали приготовления, чтобы каждое блюдо было
@@ -225,11 +236,11 @@
 					<div class="col-12 col-xl-6">
 						<div class="callback-box">
 							<div class="h2 wow animate__animated animate__fadeInLeft">У вас мероприятие?</div>
-							<div class="box-text wow animate__animated animate__fadeInLeft animate__delay-1s">
+							<div class="box-text wow animate__animated animate__fadeInLeft">
 								<p>Поможем провести ваш праздник с комфортом, вкусными блюдами на высоком уровне</p>
 							</div>
 							<form method="post" class="form-callback">
-								<div class="form-text wow animate__animated animate__fadeInLeft animate__delay-2s">
+								<div class="form-text wow animate__animated animate__fadeInLeft">
 									<p>оставьте ваши данные и мы свяжемся с вами в ближайшее время</p>
 								</div>
 
@@ -382,11 +393,10 @@
 						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp"><img src="img/adv-img1.png"
 								alt=""></a>
 						<div class="programm-card__body">
-							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-1s">25.10</div>
-							<a href="#"
-								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-1s">Уникальный
+							<div class="date-text wow animate__animated animate__fadeInUp">25.10</div>
+							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp">Уникальный
 								праздник для города</a>
-							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-1s">
+							<div class="box-text wow animate__animated animate__fadeInUp">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
 						</div>
@@ -394,14 +404,13 @@
 				</div>
 				<div class="col-12 col-md-4 mb-30">
 					<div class="programm-card">
-						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-1s"><img
-								src="img/adv-img2.png" alt=""></a>
+						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp"><img src="img/adv-img2.png"
+								alt=""></a>
 						<div class="programm-card__body">
-							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-2s">25.10</div>
-							<a href="#"
-								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-2s">Уникальный
+							<div class="date-text wow animate__animated animate__fadeInUp">25.10</div>
+							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp">Уникальный
 								праздник для города</a>
-							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-2s">
+							<div class="box-text wow animate__animated animate__fadeInUp">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
 						</div>
@@ -409,14 +418,13 @@
 				</div>
 				<div class="col-12 col-md-4 mb-30">
 					<div class="programm-card">
-						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp animate__delay-2s"><img
+						<a href="#" class="programm-card__photo wow animate__animated animate__fadeInUp"><img
 								src="img/programm3.png" alt=""></a>
 						<div class="programm-card__body">
-							<div class="date-text wow animate__animated animate__fadeInUp animate__delay-3s">25.10</div>
-							<a href="#"
-								class="programm-card__name wow animate__animated animate__fadeInUp animate__delay-3s">Уникальный
+							<div class="date-text wow animate__animated animate__fadeInUp">25.10</div>
+							<a href="#" class="programm-card__name wow animate__animated animate__fadeInUp">Уникальный
 								праздник для города</a>
-							<div class="box-text wow animate__animated animate__fadeInUp animate__delay-3s">
+							<div class="box-text wow animate__animated animate__fadeInUp">
 								<p>В этот день мы открываем для вас новый уровень банкета</p>
 							</div>
 						</div>
@@ -576,15 +584,14 @@
 				<div class="col-12 col-lg-6 order-lg-1">
 					<div class="our-halls__content">
 						<h2 class="wow animate__animated animate__fadeIn">Наши залы</h2>
-						<div class="box-text wow animate__animated animate__fadeIn animate__delay-2s">
+						<div class="box-text wow animate__animated animate__fadeIn">
 							<p>«Усадьба на Дворянской» располагает к умиротворенному и расслабленному отдыху. Оформление ресторана
 								сочетает в себе
 								элементы старинного шарма и современного дизайна. Мягкое освещение, нежные тона и комфортабельная мебель
 								создают
 								атмосферу, в которой вы почувствуете себя как дома.</p>
 						</div>
-						<a href="#"
-							class="btn btn-accent-light btn-reservation wow animate__animated animate__fadeInRight animate__delay-3s"
+						<a href="#" class="btn btn-accent-light btn-reservation wow animate__animated animate__fadeInRight"
 							data-bs-toggle="modal" data-bs-target="#reservationModal">забронировать</a>
 					</div>
 				</div>
@@ -603,7 +610,7 @@
 			<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-lg btn-blue">подробнее</a>
 		</div>
 	</div>
-	
+
 	<div class="halls-card">
 		<img src="img/halls2.png" alt="" class="halls-card__bg">
 		<div class="halls-card__body">
@@ -612,7 +619,7 @@
 			<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-lg btn-blue">подробнее</a>
 		</div>
 	</div>
-	
+
 	<div class="halls-card">
 		<img src="img/halls3.png" alt="" class="halls-card__bg">
 		<div class="halls-card__body">
@@ -621,7 +628,7 @@
 			<a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal" class="btn btn-lg btn-blue">подробнее</a>
 		</div>
 	</div>
-	
+
 	<div class="halls-card">
 		<img src="img/halls4.png" alt="" class="halls-card__bg">
 		<div class="halls-card__body">
@@ -864,12 +871,12 @@
 						<div class="form-row">
 							<div class="special-proposition">
 								<p>Если вы хотите получать наши спецпредложения, заполните поля:</p>
-<div class="tooltip-wrapper">
-	<div class="btn-tooltip">?</div>
-	<div class="tooltip-box">
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
-	</div>
-</div>
+								<div class="tooltip-wrapper">
+									<div class="btn-tooltip">?</div>
+									<div class="tooltip-box">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
+									</div>
+								</div>
 							</div>
 							<div class="form-row-line">
 								<label>
@@ -879,7 +886,7 @@
 									<input type="text" placeholder="e-mail" name="mail">
 								</label>
 							</div>
-							
+
 						</div>
 
 						<div class="form-footer">
@@ -919,9 +926,13 @@
 						</div>
 						<div class="modal-halls__content">
 							<div class="modal-title">Основные залы для гостей</div>
-							<div class="box-text"><p>Основные залы для гостей сохраняют интерьер прошлого в современной обработке. Уютные помещения с деревянной мебелью и
-							изящным декором никого не оставят равнодушными. Вы можете заказать понравившийся вам столик или арендовать зал для
-							вашего мероприятия.</p></div>
+							<div class="box-text">
+								<p>Основные залы для гостей сохраняют интерьер прошлого в современной обработке. Уютные помещения с
+									деревянной мебелью и
+									изящным декором никого не оставят равнодушными. Вы можете заказать понравившийся вам столик или
+									арендовать зал для
+									вашего мероприятия.</p>
+							</div>
 						</div>
 					</div>
 
@@ -970,12 +981,12 @@
 						<div class="form-row">
 							<div class="special-proposition">
 								<p>Если вы хотите получать наши спецпредложения, заполните поля:</p>
-<div class="tooltip-wrapper">
-	<div class="btn-tooltip">?</div>
-	<div class="tooltip-box">
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
-	</div>
-</div>
+								<div class="tooltip-wrapper">
+									<div class="btn-tooltip">?</div>
+									<div class="tooltip-box">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sit!</p>
+									</div>
+								</div>
 							</div>
 							<div class="form-row-line">
 								<label>
@@ -985,7 +996,7 @@
 									<input type="text" placeholder="e-mail" name="mail">
 								</label>
 							</div>
-							
+
 						</div>
 
 						<div class="form-footer">
@@ -1006,13 +1017,13 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#close"></use>
 						</svg></button>
-						<a href="#" data-bs-dismiss="modal" class="btn btn-md btn-close-modal btn-accent-light">хорошо</a>
+					<a href="#" data-bs-dismiss="modal" class="btn btn-md btn-close-modal btn-accent-light">хорошо</a>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>

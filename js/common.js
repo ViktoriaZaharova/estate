@@ -1,3 +1,7 @@
+setTimeout(function () {
+	$('.preloader').fadeOut();
+}, 2000);
+
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 $('.reviews-slider').slick({

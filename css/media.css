@@ -403,7 +403,7 @@
     max-width: 700px;
   }
   .home-image {
-    max-width: 45%;
+    max-width: 600px;
     right: 0;
   }
   .phone {
@@ -1145,6 +1145,9 @@
     padding: 10px 30px;
     height: 50px;
   }
+  .home {
+    height: 100vh;
+  }
   .home h1 {
     margin: 0 0 100px;
     max-width: 550px;
@@ -1159,6 +1162,9 @@
   }
   .home .schedule-box {
     margin: 0 auto 0 0;
+  }
+  .home-image {
+    max-width: 65%;
   }
   h1, .h1 {
     font-size: 40px;
@@ -1296,9 +1302,6 @@
   }
 }
 @media only screen and (max-width: 576px) {
-  .home-image {
-    display: none;
-  }
   .logo {
     max-width: 70px;
   }
