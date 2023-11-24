@@ -10,6 +10,7 @@ $('.reviews-slider').slick({
 	arrows: false,
 	autoplay: true,
 	autoplaySpeed: 6000,
+	pauseOnHover: false,
 	responsive: [
 		{
 			breakpoint: 576,

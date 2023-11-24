@@ -753,6 +753,9 @@
   .home .phone {
     margin: 0 20px 0 auto;
   }
+  .home-image {
+    max-width: 44%;
+  }
   .box-text {
     font-size: 18px;
   }
@@ -1147,6 +1150,13 @@
   }
   .home {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .home h1 {
     margin: 0 0 100px;
@@ -1163,8 +1173,8 @@
   .home .schedule-box {
     margin: 0 auto 0 0;
   }
-  .home-image {
-    max-width: 65%;
+  .home-footer {
+    margin: auto 0 0;
   }
   h1, .h1 {
     font-size: 40px;
@@ -1299,6 +1309,13 @@
   }
   .menu-sidebar__list li {
     width: 33.33%;
+  }
+  .advantages-company-box-column {
+    max-width: none;
+  }
+  .advantages-company-box-column .box-text {
+    max-width: none;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 576px) {
