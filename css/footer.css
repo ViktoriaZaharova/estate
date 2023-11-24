@@ -56,7 +56,7 @@ footer {
 }
 
 .list-social-footer {
-  max-width: 106px;
+  max-width: 86px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,15 +71,22 @@ footer {
           justify-content: space-between;
 }
 .list-social-footer li {
-  margin: 0 0 32px 0;
+  margin: 0 0 10px 0;
 }
 .list-social-footer li a {
   fill: #fff;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .list-social-footer li a:hover {
   fill: #000;
+}
+
+.developer-box {
+  max-width: 100px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin: 7px 0 0;
 }
 
 .map-location {
